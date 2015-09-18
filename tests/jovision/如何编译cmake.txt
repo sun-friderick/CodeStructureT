@@ -1,0 +1,16 @@
+本系统使用cmake管理编译系统。操作步骤如下：
+
+如果没有安装cmake，请做如下安装步骤：
+apt-get install cmake
+apt-get install g++
+
+安装完成后，编译步骤如下，初始目录在本目录中。
+
+mkdir build
+cd build
+cmake ..
+make
+
+注意每个步骤是否能够成功
+
+祝你成功 :)

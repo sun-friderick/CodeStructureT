@@ -1,0 +1,206 @@
+
+CPPFLAGS='-I/root/tools/gtk/zlib_install/include' LIBS='-L/root/tools/gtk/zlib_install/lib'
+
+
+
+
+关于cairo的编译与移植
+
+以下所用到的源码均为开源，都可以从官方网站上下载；
+
+1-zlib编译：
+# cd zlib-1.2.5
+zlib-1.2.5# ./configure --prefix=/root/tools/gtk/zlib_install/
+zlib-1.2.5# make && make install
+
+
+2-glib编译：
+# cd glib-2.41.2
+glib-2.41.2#  ./configure --prefix=/root/tools/gtk/glib_install/  CPPFLAGS='-I/root/tools/gtk/zlib_install/include' LIBS='-L/root/tools/gtk/zlib_install/lib'
+应该会出现错误：执行./configure的时候报错：
+configure: error: Package requirements (libffi >= 3.0.0) were not met:
+No package 'libffi' found
+Consider adjusting the PKG_CONFIG_PATH environment variable if you
+installed software in a non-standard prefix.
+
+应该是找不到libffi导致的，但即使安装了libffi库还是会出错，需要先下载libffi >= 3.0.0的版本，重新按默认配置编译libffi-3.0.11-rc1：
+# cd libffi-3.0.11-rc1
+libffi-3.0.11-rc1# ./configure
+libffi-3.0.11-rc1# make && make install
+然后配置环境变量：
+libffi-3.0.11-rc1# export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+libffi-3.0.11-rc1# export PKG_CONFIG_LIBDIR=/usr/local/lib/pkgconfig
+
+然后重新开始配置编译glib：
+# cd glib-2.41.2
+glib-2.41.2#  ./configure --prefix=/root/tools/gtk/glib_install/  CPPFLAGS='-I/root/tools/gtk/zlib_install/include' LIBS='-L/root/tools/gtk/zlib_install/lib'
+glib-2.41.2#  make && make install
+
+
+3-libpng编译：
+# cd libpng-1.6.13beta03
+libpng-1.6.13beta03# ./configure --prefix=/root/tools/gtk/libpng_install
+libpng-1.6.13beta03# make && make install
+
+
+4-jpeg-9a编译：
+# cd jpeg-9a
+jpeg-9a# ./configure --prefix=/root/tools/gtk/jpeg_install
+jpeg-9a# make && make install
+
+
+5-freetype编译：
+# cd freetype-2.5.3
+freetype-2.5.3# ./configure --prefix=/root/tools/gtk/freetype_install
+freetype-2.5.3# make && make install
+
+
+6-libtool编译：
+# cd libtool-2.4
+libtool-2.4# ./configure --prefix=/root/tools/gtk/libtool_install 
+libtool-2.4# make && make install
+
+
+7-libxml2编译：下载一个版本高于2.6.0(编译fontconfig需要)的libxml2稳定版本源码包；
+# cd libxml2-2.9.1
+libxml2-2.9.1# ./configure --prefix=/root/tools/gtk/libxml2_install 
+libxml2-2.9.1# make && make install
+
+在make时会出现错误，应该是python的头文件路径不对导致的，需要重新安装下python，从官方网站下载Python-2.7.8：
+# cd Python-2.7.8 
+Python-2.7.8# ./configure
+Python-2.7.8# make && make install
+
+然后重新运行：
+# cd libxml2-2.9.1
+libxml2-2.9.1# ./configure --prefix=/root/tools/gtk/libxml2_install 
+libxml2-2.9.1# make && make install
+
+
+8-fontconfig编译：
+# cd fontconfig-2.11.1
+fontconfig-2.11.1# ./configure --prefix=/root/tools/gtk/fontconfig_install --with-freetype-config=/root/tools/gtk/freetype_install/bin/freetype-config --enable-libxml2 LIBXML2_LIBS='-L/root/tools/gtk/libxml2_install/lib -lxml2' LIBXML2_CFLAGS='-I/root/tools/gtk/libxml2_install/include/libxml2'
+其中：
+路径:/root/tools/gtk/freetype_install/bin/freetype-config是交叉编译安装freetype生成的文件
+路径:/root/tools/gtk/libxml2_install/是交叉编译安装libxml2生成的目录文件。
+
+但在配置时会出现找不到package freetype2，需要配置环境变量：
+fontconfig-2.11.1# export PKG_CONFIG_PATH=/root/tools/gtk/freetype_install/lib/pkgconfig
+fontconfig-2.11.1# export PKG_CONFIG_LIBDIR=/root/tools/gtk/freetype_install/lib/pkgconfig
+
+然后运行：
+fontconfig-2.11.1# make && make install
+
+
+9-pixman编译：
+#cd pixman-0.22.0
+pixman-0.22.0# ./configure --prefix=/root/tools/gtk/pixman_install LIBS='-L/root/tools/gtk/zlib_instal/lib/ -lz' CPPFLAGS='-I/root/tools/gtk/zlib_install/include' PNG_CFLAGS='-I/root/tools/gtk/libpng_install/include' PNG_LIBS='-L/root/tools/gtk/libpng_install/lib/ -lpng12'
+其中：
+路径:/root/tools/gtk/zlib_install/是交叉编译安装zlib生成的目录文件
+路径:/root/tools/gtk/libpng_install/是交叉编译安装libpng生成的目录文件
+
+pixman-0.22.0# make && make install
+
+
+10-cairo编译：
+先来配置环境变量：
+export PKG_CONFIG_LIBDIR="/root/tools/gtk/libpng_install/lib/pkgconfig:/root/tools/gtk/freetype_install/lib/pkgconfig:/root/tools/gtk/fontconfig_instal/lib/pkgconfig:/root/tools/gtk/pixman_install/lib/pkgconfig:/usr/lib/pkgconfig:/root/tools/gtk/glib_install/lib/pkgconfig"
+export PKG_CONFIG_PATH="/root/tools/gtk/libpng_install/lib/pkgconfig:/root/tools/gtk/freetype_install/lib/pkgconfig:/root/tools/gtk/fontconfig_instal/lib/pkgconfig:/root/tools/gtk/pixman_install/lib/pkgconfig:/usr/lib/pkgconfig:/root/tools/gtk/glib_install/lib/pkgconfig"
+./configure --prefix=/root/tools/gtk/cairo_install/ --disable-win32 --enable-pdf --enable-ps --disable-svg --enable-png --enable-test-surfaces  LIBS='-L/root/tools/gtk/zlib_install/lib/ -lz -L/root/tools/gtk/glib_install/lib/' CPPFLAGS='-I/root/tools/gtk/zlib_install/include/' png_CFLAGS='-I/root/tools/gtk/libpng_install/include' png_LIBS='-L/root/tools/gtk/libpng_install/lib' FONTCONFIG_CFLAGS='-I/root/tools/gtk/fontconfig_install/include' FONTCONFIG_LIBS='-L/root/tools/gtk/fontconfig_instal/lib' FREETYPE_CFLAGS='-I/root/tools/gtk/freetype_install/include/freetype2/ -I/root/tools/gtk/freetype_install/include/' FREETYPE_LIBS='-L/root/tools/gtk/freetype_install/lib' pixman_CFLAGS='-I/root/tools/gtk/pixman_install/include/pixman-1' pixman_LIBS='-L/root/tools/gtk/pixman_install/lib -lpixman-1' 
+
+或者：
+#./configure --prefix=/root/tools/gtk/cairo_install/ --with-x --enable-xlib --enable-xlib-xrender --disable-win32 --enable-pdf --enable-ps --disable-svg --enable-png LIBS='-L/root/tools/gtk/zlib_install/lib/ -lz' CPPFLAGS='-I/root/tools/gtk/zlib_install/include/' png_CFLAGS='-I/root/tools/gtk/libpng_install/include' png_LIBS='-L/root/tools/gtk/libpng_install/lib' FONTCONFIG_CFLAGS='-I/root/tools/gtk/fontconfig_install/include' FONTCONFIG_LIBS='-L/root/tools/gtk/fontconfig_instal/lib' FREETYPE_CFLAGS='-I/root/tools/gtk/freetype_install/include/freetype2/ -I/root/tools/gtk/freetype_install/include/' FREETYPE_LIBS='-L/root/tools/gtk/freetype_install/lib' pixman_CFLAGS='-I/root/tools/gtk/pixman_install/include/pixman-1' pixman_LIBS='-L/root/tools/gtk/pixman_install/lib -lpixman-1' directfb_CFLASGS='-I/root/tools/gtk/DirectFB_install/include/directfb' directfb_LIBS='-L/root/tools/gtk/DirectFB_install/lib' xlib_CFLAGS='-I/root/tools/x11/install/include' xlib_LIBS='-L/root/tools/x11/install/lib' xcb_CFLAGS='-I/root/tools/x11/install/include' xcb_LIBS='-L/root/tools/x11/install/lib' xlib_xrender_CFLAGS='-I/root/tools/x11/libxrender_install/include' xlib_xrender_LIBS='-L/root/tools/x11/libxrender_install/lib'
+
+其中：
+路径:/root/tools/gtk/zlib_install/是交叉编译安装zlib生成的目录文件
+路径:/root/tools/gtk/libpng_install/是交叉编译安装libpng生成的目录文件。
+路径:/root/tools/gtk/fontconfig_install/是交叉编译安装fontconfig生成的目录文件。
+路径:/root/tools/gtk/freetype_install/是交叉编译安装freetype生成的目录文件。
+路径:/root/tools/gtk/pixman_install/是交叉编译安装pixman生成的目录文件。
+路径:/root/tools/gtk/DirectFB_install/是交叉编译安装DirectFB生成的目录文件。
+路径:/root/tools/x11/install/是交叉编译安装所有x11依赖库生成的目录文件的集合。
+路径:/root/tools/x11/libxrender_install/是交叉编译安装libXrender生成的目录文件。
+
+#make && make install
+
+编译安装成功后在--prefix指定的目录下生成include、share和lib目录。
+
+
+
+
+
+
+
+gtk+交叉编译gtk步骤
+
+（说明：由于编译的ubuntu系统环境已经安装了pango、atk、png、jpeg...库等等，在gtk执行./configure的时候会自动地去链接安装在/usr/local/lib/目录下的pango、atk、png、jpeg...库，而非交叉编译生成的/home/tool/gtk/****_install/目录下的pango、atk、png、jpeg...库，尝试配置环境变量仍无法解决。因此这里configure生成的Makefile指向链接编译的库文件路径，需要修改为交叉编译的库文件，其他编译步骤与配置与通常交叉编译gtk基本一致。）
+
+1、拷贝文件：
+把前面所有交叉编译gtk依赖库和x11依赖库，安装生成的所有****_install/目录下文件，分别全部拷贝到install_gtkx11/目录下：
+#mkdir /home/tool/install_gtkx11/
+#cp gtk/atk_install/* /home/tool/install_gtkx11/ -arf
+#cp gtk/****_install/* /home/tool/install_gtkx11/ -arf
+#cp x11/xtranx_install/* /home/tool/install_gtkx11/ -arf
+#cp x11/****_install/* /home/tool/install_gtkx11/ -arf
+
+2、配置环境变量(必须，否则可能导致链接库出错)：
+#export PREFIX=/home/tool/install_gtkx11
+#export LDFLAGS="-L$PREFIX/lib -Wl,-rpath,$PFEFIX/lib"
+#export CPPFLAGS="-I$PREFIX/include"
+#export BASE_DEPENDENCIES_LIBS="-L/home/tool/install_gtkx11/lib -lpangocairo-1.0 -lpango-1.0 -lpangoft2-1.0 -lpangox-1.0 -lpangoxft-1.0 -lcairo -ljpeg -lpng12 -latk-1.0 -ldirectfb -ldirect -lfusion -lfontconfig -lfreetype -lz -lglib-2.0 -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lltdl -lxml2 -lpixman-1 -lX11 -lXrender -lXau -lxcb -lXft -lXext -lrt -lm"
+#export BASE_DEPENDENCIES_CFLAGS="-I/home/tool/install_gtkx86/include"
+
+3、配置gtk：
+#tar zxf gtk+-2.16.0.tar.gz
+#cd gtk+-2.16.0
+生成mipsel-linux.cache文件：
+#echo gio_can_sniff>mipsel-linux.cache
+
+这一步是为了避免configure的时候出现：
+checking for gio can sniff... Configure:error:in '/home/tool/gtk/gtk+-2.16.0':
+configure: error: cannot run test program while cross compiling
+这个错误。
+
+配置(配置过程中出现错误可参考config.log解决)：
+./configure --prefix=/home/tool/gtk/gtk_install/ --host=mipsel-linux --disable-debug --disable-cups --with-gdktarget=x11 --with-x --enable-xkb --enable-xinerama --without-libtiff --without-libjasper --disable-glibtest  CPPFLAGS='-I/home/tool/install_gtkx11/include/pango-1.0/ -I/home/tool/install_gtkx11/include/cairo -I/home/tool/install_gtkx11/include/pixman-1/ -I/home/tool/install_gtkx11/include/libpng12 -I/home/tool/install_gtkx11/include/directfb/ -I/home/tool/install_gtkx11/include/libxml2 -I/home/tool/install_gtkx11/include/atk-1.0/ -I/home/tool/install_gtkx11/include'  LIBS='-L/home/tool/install_gtkx11/lib/ -lpango-1.0 -lpangocairo-1.0 -lpangox-1.0 -lpangoxft-1.0 -lpangoft2-1.0 -lglib-2.0 -lgmodule-2.0 -lgobject-2.0 -lgthread-2.0 -lgio-2.0 -ljpeg -lcairo -lz -lpixman-1 -lpng12 -ldirectfb -ldirect -lfusion -lfontconfig -lfreetype -lxml2 -latk-1.0 -lX11 -lxcb -lXrender -lXau -lXft -lXext -lXdamage -lXfixes -lXcursor -lXcomposite -lXrandr -lXinerama -lrt -lm'  BASE_DEPENDENCIES_LIBS="-Wl,-rpath /home/tool/install_gtkx11/lib -lpangocairo-1.0 -lpango-1.0 -lpangox-1.0 -lpangoxft-1.0 -lcairo -ljpeg -lpng12 -lpangoft2-1.0 -latk-1.0 -ldirectfb -ldirect -lfusion -lfontconfig -lfreetype -lz -lglib-2.0 -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lltdl -lxml2 -lpixman-1 -lX11 -lxcb -lXrender -lXau -lXft -lXext -lXdamage -lXfixes -lXcursor -lXcomposite -lXrandr -lXinerama -lrt -lm"  BASE_DEPENDENCIES_CFLAGS="-I/home/tool/install_gtkx11/include/" --cache-file=mipsel-linux.cache
+
+路径:/home/tool/install_gtkx11/是所有gtk依赖库和X11相关库交叉编译生成目录文件的汇总。
+
+说明：
+由于在configure过程中，pango的动态库一直链接不正确导致configure退出，这里将该检测pango错误退出的动作屏蔽：
+#vi configure
+查找语句"Can't link to Pango. Pango is required to build"，将语句后的退出语句"{{(exit 1); exit 1;}};"屏蔽(注意大括号的个数)。
+使之完成configure并生成Makefile，后再通过修改Makefile使之链接正确的pango库和其他相关依赖库的文件路径。即相应地，把Makefile链接的库文件路径指定为-L/home/tool/install_gtkx11/目录下。
+
+如Makefile里有这样一句：
+GTK_DEP_LIBS= -pthread -lpangocairo-1.0 -lpango-1.0 -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lrt -lglib-2.0 -lfontconfig -lXext -lXrender -lXinerama -lXrandr -lXcursor -lXcomposite -lXdamage -lcairo -lX11 -lm
+则修改为：
+GTK_DEP_LIBS= -pthread -L/home/tool/install_gtkx11/lib -lpangocairo-1.0 -lpango-1.0 -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lrt -lglib-2.0 -lfontconfig -lXext -lXrender -lXinerama -lXrandr -lXcursor -lXcomposite -lXdamage -lcairo -lX11 -lm
+
+类似地，其他语句指定的库没链接到交叉编译install_gtkx11目录的，按上面方法修改即可。
+(备注：gtk依赖库本身没生成librt和libm，这两个库是从编译器拷到/home/tool/install_gtkx11/lib下的)
+
+#make && make install
+出现问题：
+gtkscalebutton.c：错误：conflicting types for ‘gtk_scale_button_set_orientation’
+
+问题分析：
+是由于gtk/gtkscalebutton.c在声明函数前调用了该函数产生错误，将void gtk_scale_button_set_orientation(GtkScaleButton *button, GtkOrientation orientation);在调用前声明即可。
+
+编译安装成功后在--prefix指定的目录下生成bin、etc、include、shared和lib目录。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

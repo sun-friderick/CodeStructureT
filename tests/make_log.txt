@@ -1,0 +1,508 @@
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -H/mnt/hgfs/weather/my_player -B/root/test/cmake/test_cmake --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_start /root/test/cmake/test_cmake/CMakeFiles /root/test/cmake/test_cmake/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory `/root/test/cmake/test_cmake'
+make -f src/CMakeFiles/build_info.dir/build.make src/CMakeFiles/build_info.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src /root/test/cmake/test_cmake/src/CMakeFiles/build_info.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/CMakeFiles/build_info.dir/build.make src/CMakeFiles/build_info.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 2
+[  3%] test make_version.sh
+cd /root/test/cmake/test_cmake/src && exec /mnt/hgfs/weather/my_player/config/scripts/make_version.sh
+-----------------------------------------------
+            generate build_info.h              
+-----------------------------------------------
+delete /mnt/hgfs/weather/my_player/config/scripts/../../src/includes/build_info.h
+#ifndef __BUILD_INFO_H__
+#define __BUILD_INFO_H__
+ 
+ 
+#define g_make_build_date             "Fri Apr 10 14:10:19 CST 2015"
+#define g_make_build_user_name        "root"
+#define g_make_build_host_name        "sun-desktop"
+#define g_make_build_kernel_revision  "Linux 2.6.32-33-generic i686"
+#define g_make_svn_version    "5325"
+#define g_make_major_version  "1"
+#define g_make_minor_version  "0"
+#define g_make_build_version  "1.0.5325"
+ 
+#endif //__BUILD_INFO_H__
+-- written to /mnt/hgfs/weather/my_player/config/scripts/../../src/includes/build_info.h
+cd /root/test/cmake/test_cmake/src && exec /mnt/hgfs/weather/my_player/config/scripts/prepare_arch_libs.sh /root/test/cmake/test_cmake/libs /mnt/hgfs/weather/my_player/src/libs /mnt/hgfs/weather/my_player/src/includes 0.8.15 2.0.3
+----------------------------------------------------------------------------
+                             prepare arch libs                              
+----------------------------------------------------------------------------
+/mnt/hgfs/weather/my_player/src/libs/SDL2-2.0.3-libs.tar.gz
+/mnt/hgfs/weather/my_player/src/includes/SDL2-2.0.3-includes.tar.gz
+libavcodec.a
+libavcodec.so
+libavcodec.so.53
+libavcodec.so.53.8.0
+libavdevice.a
+libavdevice.so
+libavdevice.so.53
+libavdevice.so.53.1.1
+libavfilter.a
+libavfilter.so
+libavfilter.so.2
+libavfilter.so.2.23.0
+libavformat.a
+libavformat.so
+libavformat.so.53
+libavformat.so.53.5.0
+libavutil.a
+libavutil.so
+libavutil.so.51
+libavutil.so.51.9.1
+libswscale.a
+libswscale.so
+libswscale.so.2
+libswscale.so.2.0.0
+pkgconfig/
+pkgconfig/libavcodec.pc
+pkgconfig/libswscale.pc
+pkgconfig/libavfilter.pc
+pkgconfig/libavdevice.pc
+pkgconfig/libavutil.pc
+pkgconfig/libavformat.pc
+libavcodec/
+libavcodec/vdpau.h
+libavcodec/avcodec.h
+libavcodec/vaapi.h
+libavcodec/version.h
+libavcodec/avfft.h
+libavcodec/xvmc.h
+libavcodec/dxva2.h
+libavcodec/opt.h
+libavdevice/
+libavdevice/avdevice.h
+libavfilter/
+libavfilter/avcodec.h
+libavfilter/avfiltergraph.h
+libavfilter/vsrc_buffer.h
+libavfilter/avfilter.h
+libavfilter/vsink_buffer.h
+libavformat/
+libavformat/version.h
+libavformat/avio.h
+libavformat/avformat.h
+libavutil/
+libavutil/attributes.h
+libavutil/md5.h
+libavutil/bswap.h
+libavutil/avstring.h
+libavutil/file.h
+libavutil/eval.h
+libavutil/fifo.h
+libavutil/sha.h
+libavutil/cpu.h
+libavutil/random_seed.h
+libavutil/avconfig.h
+libavutil/avassert.h
+libavutil/adler32.h
+libavutil/log.h
+libavutil/intfloat_readwrite.h
+libavutil/mathematics.h
+libavutil/mem.h
+libavutil/crc.h
+libavutil/lzo.h
+libavutil/base64.h
+libavutil/intreadwrite.h
+libavutil/aes.h
+libavutil/lfg.h
+libavutil/rational.h
+libavutil/pixfmt.h
+libavutil/samplefmt.h
+libavutil/opt.h
+libavutil/common.h
+libavutil/error.h
+libavutil/pixdesc.h
+libavutil/parseutils.h
+libavutil/dict.h
+libavutil/audioconvert.h
+libavutil/imgutils.h
+libavutil/avutil.h
+libswscale/
+libswscale/swscale.h
+/mnt/hgfs/weather/my_player/src/libs/ffmpeg-0.8.15-libs.tar.gz  /mnt/hgfs/weather/my_player/src/includes/ffmpeg-0.8.15-includes.tar.gz done.............. 
+/mnt/hgfs/weather/my_player/src/libs/SDL2-2.0.3-libs.tar.gz  /mnt/hgfs/weather/my_player/src/includes/SDL2-2.0.3-includes.tar.gz done.............. 
+-- written to 
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 1
+[  7%] test build_info
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  1 2
+[  7%] Built target build_info
+make -f src/Utils/CMakeFiles/utilslib.dir/build.make src/Utils/CMakeFiles/utilslib.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Utils /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Utils /root/test/cmake/test_cmake/src/Utils/CMakeFiles/utilslib.dir/DependInfo.cmake --color=
+Scanning dependencies of target utilslib
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Utils/CMakeFiles/utilslib.dir/build.make src/Utils/CMakeFiles/utilslib.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 23
+[ 11%] Building C object src/Utils/CMakeFiles/utilslib.dir/logParseFiles.c.o
+cd /root/test/cmake/test_cmake/src/Utils && /usr/bin/gcc  -Dutilslib_EXPORTS -fPIC -I/mnt/hgfs/weather/my_player/src/includes -I/mnt/hgfs/weather/my_player/src/includes/ffmpeg -I/mnt/hgfs/weather/my_player/src/includes/SDL2 -I/mnt/hgfs/weather/my_player/src -I/mnt/hgfs/weather/my_player/src/Log -I/mnt/hgfs/weather/my_player/src/Monitor -I/mnt/hgfs/weather/my_player/src/Player -I/mnt/hgfs/weather/my_player/src/Utils -I/mnt/hgfs/weather/my_player/src/Utils/ParserIni -I/mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/weather/my_player/src/Widget    -o CMakeFiles/utilslib.dir/logParseFiles.c.o   -c /mnt/hgfs/weather/my_player/src/Utils/logParseFiles.c
+Linking C shared library ../../libs/libutilslib.so
+cd /root/test/cmake/test_cmake/src/Utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/utilslib.dir/link.txt --verbose=1
+/usr/bin/gcc  -fPIC    -shared -Wl,-soname,libutilslib.so.1 -o ../../libs/libutilslib.so.1.0.0 CMakeFiles/utilslib.dir/logParseFiles.c.o -L/mnt/hgfs/weather/my_player/src/libs -L/root/test/cmake/test_cmake/libs/ffmpeg -L/root/test/cmake/test_cmake/libs/SDL2/lib -L/debug -L/release 
+cd /root/test/cmake/test_cmake/src/Utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../libs/libutilslib.so.1.0.0 ../../libs/libutilslib.so.1 ../../libs/libutilslib.so
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  23
+[ 11%] Built target utilslib
+make -f src/Player/CMakeFiles/playerlib.dir/build.make src/Player/CMakeFiles/playerlib.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Player /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Player /root/test/cmake/test_cmake/src/Player/CMakeFiles/playerlib.dir/DependInfo.cmake --color=
+Scanning dependencies of target playerlib
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Player/CMakeFiles/playerlib.dir/build.make src/Player/CMakeFiles/playerlib.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 20
+[ 14%] Building C object src/Player/CMakeFiles/playerlib.dir/LogPlayer.c.o
+cd /root/test/cmake/test_cmake/src/Player && /usr/bin/gcc  -Dplayerlib_EXPORTS -fPIC -I/mnt/hgfs/weather/my_player/src/includes -I/mnt/hgfs/weather/my_player/src/includes/ffmpeg -I/mnt/hgfs/weather/my_player/src/includes/SDL2 -I/mnt/hgfs/weather/my_player/src -I/mnt/hgfs/weather/my_player/src/Log -I/mnt/hgfs/weather/my_player/src/Monitor -I/mnt/hgfs/weather/my_player/src/Player -I/mnt/hgfs/weather/my_player/src/Utils -I/mnt/hgfs/weather/my_player/src/Utils/ParserIni -I/mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/weather/my_player/src/Widget    -o CMakeFiles/playerlib.dir/LogPlayer.c.o   -c /mnt/hgfs/weather/my_player/src/Player/LogPlayer.c
+Linking C shared library ../../libs/libplayerlib.so
+cd /root/test/cmake/test_cmake/src/Player && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/playerlib.dir/link.txt --verbose=1
+/usr/bin/gcc  -fPIC    -shared -Wl,-soname,libplayerlib.so.1 -o ../../libs/libplayerlib.so.1.0.0 CMakeFiles/playerlib.dir/LogPlayer.c.o -L/mnt/hgfs/weather/my_player/src/libs -L/root/test/cmake/test_cmake/libs/ffmpeg -L/root/test/cmake/test_cmake/libs/SDL2/lib -L/debug -L/release -L/usr/local/lib 
+cd /root/test/cmake/test_cmake/src/Player && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../libs/libplayerlib.so.1.0.0 ../../libs/libplayerlib.so.1 ../../libs/libplayerlib.so
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  20
+[ 14%] Built target playerlib
+make -f src/Monitor/CMakeFiles/monitorlib.dir/build.make src/Monitor/CMakeFiles/monitorlib.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Monitor /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Monitor /root/test/cmake/test_cmake/src/Monitor/CMakeFiles/monitorlib.dir/DependInfo.cmake --color=
+Scanning dependencies of target monitorlib
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Monitor/CMakeFiles/monitorlib.dir/build.make src/Monitor/CMakeFiles/monitorlib.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 17
+[ 18%] Building C object src/Monitor/CMakeFiles/monitorlib.dir/logMonitor.c.o
+cd /root/test/cmake/test_cmake/src/Monitor && /usr/bin/gcc  -Dmonitorlib_EXPORTS -fPIC -I/mnt/hgfs/weather/my_player/src/includes -I/mnt/hgfs/weather/my_player/src/includes/ffmpeg -I/mnt/hgfs/weather/my_player/src/includes/SDL2 -I/mnt/hgfs/weather/my_player/src -I/mnt/hgfs/weather/my_player/src/Log -I/mnt/hgfs/weather/my_player/src/Monitor -I/mnt/hgfs/weather/my_player/src/Player -I/mnt/hgfs/weather/my_player/src/Utils -I/mnt/hgfs/weather/my_player/src/Utils/ParserIni -I/mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/weather/my_player/src/Widget -I/mnt/hgfs/weather/my_player/src/Monitor/Util -I/mnt/hgfs/weather/my_player/src/Monitor/Server    -o CMakeFiles/monitorlib.dir/logMonitor.c.o   -c /mnt/hgfs/weather/my_player/src/Monitor/logMonitor.c
+Linking C shared library ../../libs/libmonitorlib.so
+cd /root/test/cmake/test_cmake/src/Monitor && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/monitorlib.dir/link.txt --verbose=1
+/usr/bin/gcc  -fPIC    -shared -Wl,-soname,libmonitorlib.so.1 -o ../../libs/libmonitorlib.so.1.0.0 CMakeFiles/monitorlib.dir/logMonitor.c.o -L/mnt/hgfs/weather/my_player/src/libs -L/root/test/cmake/test_cmake/libs/ffmpeg -L/root/test/cmake/test_cmake/libs/SDL2/lib -L/debug -L/release -L/usr/local/lib 
+cd /root/test/cmake/test_cmake/src/Monitor && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../libs/libmonitorlib.so.1.0.0 ../../libs/libmonitorlib.so.1 ../../libs/libmonitorlib.so
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  17
+[ 18%] Built target monitorlib
+make -f src/Log/CMakeFiles/functions_statisticslib.dir/build.make src/Log/CMakeFiles/functions_statisticslib.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Log /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Log /root/test/cmake/test_cmake/src/Log/CMakeFiles/functions_statisticslib.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Log/CMakeFiles/functions_statisticslib.dir/build.make src/Log/CMakeFiles/functions_statisticslib.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+make[2]: Nothing to be done for `src/Log/CMakeFiles/functions_statisticslib.dir/build'.
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  4
+[ 22%] Built target functions_statisticslib
+make -f src/Log/CMakeFiles/loglib.dir/build.make src/Log/CMakeFiles/loglib.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Log /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Log /root/test/cmake/test_cmake/src/Log/CMakeFiles/loglib.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Log/CMakeFiles/loglib.dir/build.make src/Log/CMakeFiles/loglib.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+make[2]: Nothing to be done for `src/Log/CMakeFiles/loglib.dir/build'.
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  15
+[ 25%] Built target loglib
+make -f src/Widget/CMakeFiles/widgetlib.dir/build.make src/Widget/CMakeFiles/widgetlib.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Widget /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Widget /root/test/cmake/test_cmake/src/Widget/CMakeFiles/widgetlib.dir/DependInfo.cmake --color=
+Scanning dependencies of target widgetlib
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Widget/CMakeFiles/widgetlib.dir/build.make src/Widget/CMakeFiles/widgetlib.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 25
+[ 29%] Building C object src/Widget/CMakeFiles/widgetlib.dir/LogUI.c.o
+cd /root/test/cmake/test_cmake/src/Widget && /usr/bin/gcc  -Dwidgetlib_EXPORTS -fPIC -I/mnt/hgfs/weather/my_player/src/includes -I/mnt/hgfs/weather/my_player/src/includes/ffmpeg -I/mnt/hgfs/weather/my_player/src/includes/SDL2 -I/mnt/hgfs/weather/my_player/src -I/mnt/hgfs/weather/my_player/src/Log -I/mnt/hgfs/weather/my_player/src/Monitor -I/mnt/hgfs/weather/my_player/src/Player -I/mnt/hgfs/weather/my_player/src/Utils -I/mnt/hgfs/weather/my_player/src/Utils/ParserIni -I/mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/weather/my_player/src/Widget    -o CMakeFiles/widgetlib.dir/LogUI.c.o   -c /mnt/hgfs/weather/my_player/src/Widget/LogUI.c
+Linking C shared library ../../libs/libwidgetlib.so
+cd /root/test/cmake/test_cmake/src/Widget && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/widgetlib.dir/link.txt --verbose=1
+/usr/bin/gcc  -fPIC    -shared -Wl,-soname,libwidgetlib.so.1 -o ../../libs/libwidgetlib.so.1.0.0 CMakeFiles/widgetlib.dir/LogUI.c.o -L/mnt/hgfs/weather/my_player/src/libs -L/root/test/cmake/test_cmake/libs/ffmpeg -L/root/test/cmake/test_cmake/libs/SDL2/lib -L/debug -L/release -L/usr/local/lib 
+cd /root/test/cmake/test_cmake/src/Widget && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../libs/libwidgetlib.so.1.0.0 ../../libs/libwidgetlib.so.1 ../../libs/libwidgetlib.so
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  25
+[ 29%] Built target widgetlib
+make -f src/CMakeFiles/myplayer.elf.dir/build.make src/CMakeFiles/myplayer.elf.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src /root/test/cmake/test_cmake/src/CMakeFiles/myplayer.elf.dir/DependInfo.cmake --color=
+Scanning dependencies of target myplayer.elf
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/CMakeFiles/myplayer.elf.dir/build.make src/CMakeFiles/myplayer.elf.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 19
+[ 33%] Building C object src/CMakeFiles/myplayer.elf.dir/test_cmake.c.o
+cd /root/test/cmake/test_cmake/src && /usr/bin/gcc   -I/mnt/hgfs/weather/my_player/src/includes -I/mnt/hgfs/weather/my_player/src/includes/ffmpeg -I/mnt/hgfs/weather/my_player/src/includes/SDL2 -I/mnt/hgfs/weather/my_player/src -I/mnt/hgfs/weather/my_player/src/Log -I/mnt/hgfs/weather/my_player/src/Monitor -I/mnt/hgfs/weather/my_player/src/Player -I/mnt/hgfs/weather/my_player/src/Utils -I/mnt/hgfs/weather/my_player/src/Utils/ParserIni -I/mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/weather/my_player/src/Widget    -o CMakeFiles/myplayer.elf.dir/test_cmake.c.o   -c /mnt/hgfs/weather/my_player/src/test_cmake.c
+Linking C executable ../bin/myplayer.elf
+cd /root/test/cmake/test_cmake/src && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/myplayer.elf.dir/link.txt --verbose=1
+/usr/bin/gcc      CMakeFiles/myplayer.elf.dir/test_cmake.c.o  -o ../bin/myplayer.elf -rdynamic -L/mnt/hgfs/weather/my_player/src/libs -L/root/test/cmake/test_cmake/libs/ffmpeg -L/root/test/cmake/test_cmake/libs/SDL2/lib -L/debug -L/release ../libs/libloglib.so.1.0.0 -finstrument-functions ../libs/libfunctions_statisticslib.so ../libs/libmonitorlib.so.1.0.0 ../libs/libplayerlib.so.1.0.0 ../libs/libwidgetlib.so.1.0.0 ../libs/libutilslib.so.1.0.0 -lSDL2 -lpthread -Wl,-rpath,/mnt/hgfs/weather/my_player/src/libs:/root/test/cmake/test_cmake/libs/ffmpeg:/root/test/cmake/test_cmake/libs/SDL2/lib:/debug:/release:/root/test/cmake/test_cmake/libs 
+cp /root/test/cmake/test_cmake/libs/* /mnt/hgfs/weather/my_player/dist/ 
+cd /root/test/cmake/test_cmake/bin && sudo cp -arpf myplayer.elf /mnt/hgfs/weather/my_player/dist/
+cd /root/test/cmake/test_cmake/bin && sudo tar -zcvf /mnt/hgfs/weather/my_player/dist/libs.tar.gz /root/test/cmake/test_cmake/libs/
+/root/test/cmake/test_cmake/libs/
+/root/test/cmake/test_cmake/libs/libjsoncpplib.so.1.0.0
+/root/test/cmake/test_cmake/libs/libini-parserlib.so.1
+/root/test/cmake/test_cmake/libs/libjsoncpplib.so.1
+/root/test/cmake/test_cmake/libs/libtinyxml2.so.2
+/root/test/cmake/test_cmake/libs/libwidgetlib.so.1.0.0
+/root/test/cmake/test_cmake/libs/ffmpeg/
+/root/test/cmake/test_cmake/libs/ffmpeg/libavutil.so.51.9.1
+/root/test/cmake/test_cmake/libs/ffmpeg/libavformat.so
+/root/test/cmake/test_cmake/libs/ffmpeg/libavformat.so.53.5.0
+/root/test/cmake/test_cmake/libs/ffmpeg/libavfilter.so.2.23.0
+/root/test/cmake/test_cmake/libs/ffmpeg/pkgconfig/
+/root/test/cmake/test_cmake/libs/ffmpeg/pkgconfig/libavcodec.pc
+/root/test/cmake/test_cmake/libs/ffmpeg/pkgconfig/libswscale.pc
+/root/test/cmake/test_cmake/libs/ffmpeg/pkgconfig/libavfilter.pc
+/root/test/cmake/test_cmake/libs/ffmpeg/pkgconfig/libavdevice.pc
+/root/test/cmake/test_cmake/libs/ffmpeg/pkgconfig/libavutil.pc
+/root/test/cmake/test_cmake/libs/ffmpeg/pkgconfig/libavformat.pc
+/root/test/cmake/test_cmake/libs/ffmpeg/libswscale.a
+/root/test/cmake/test_cmake/libs/ffmpeg/libavcodec.so
+/root/test/cmake/test_cmake/libs/ffmpeg/libavdevice.a
+/root/test/cmake/test_cmake/libs/ffmpeg/libavfilter.so.2
+/root/test/cmake/test_cmake/libs/ffmpeg/libavdevice.so
+/root/test/cmake/test_cmake/libs/ffmpeg/libavdevice.so.53.1.1
+/root/test/cmake/test_cmake/libs/ffmpeg/libavformat.so.53
+/root/test/cmake/test_cmake/libs/ffmpeg/libavutil.so
+/root/test/cmake/test_cmake/libs/ffmpeg/libavdevice.so.53
+/root/test/cmake/test_cmake/libs/ffmpeg/libavcodec.a
+/root/test/cmake/test_cmake/libs/ffmpeg/libavcodec.so.53
+/root/test/cmake/test_cmake/libs/ffmpeg/libswscale.so.2
+/root/test/cmake/test_cmake/libs/ffmpeg/libavutil.so.51
+/root/test/cmake/test_cmake/libs/ffmpeg/libavfilter.so
+/root/test/cmake/test_cmake/libs/ffmpeg/libswscale.so.2.0.0
+/root/test/cmake/test_cmake/libs/ffmpeg/libavcodec.so.53.8.0
+/root/test/cmake/test_cmake/libs/ffmpeg/libavfilter.a
+/root/test/cmake/test_cmake/libs/ffmpeg/libswscale.so
+/root/test/cmake/test_cmake/libs/ffmpeg/libavutil.a
+/root/test/cmake/test_cmake/libs/ffmpeg/libavformat.a
+/root/test/cmake/test_cmake/libs/libloglib.so.1.0.0
+/root/test/cmake/test_cmake/libs/libplayerlib.so
+/root/test/cmake/test_cmake/libs/libloglib.so
+/root/test/cmake/test_cmake/libs/libmonitorlib.so.1
+/root/test/cmake/test_cmake/libs/libutilslib.so
+/root/test/cmake/test_cmake/libs/libfunctions_statisticslib.so
+/root/test/cmake/test_cmake/libs/libplayerlib.so.1.0.0
+/root/test/cmake/test_cmake/libs/libmonitorlib.so
+/root/test/cmake/test_cmake/libs/libini-parsers.a
+/root/test/cmake/test_cmake/libs/libwidgetlib.so
+/root/test/cmake/test_cmake/libs/libtinyxml2.so
+/root/test/cmake/test_cmake/libs/libutilslib.so.1.0.0
+/root/test/cmake/test_cmake/libs/libjsoncpplib.so
+/root/test/cmake/test_cmake/libs/liblogs.a
+/root/test/cmake/test_cmake/libs/libplayers.a
+/root/test/cmake/test_cmake/libs/libutilslib.so.1
+/root/test/cmake/test_cmake/libs/libwidgetlib.so.1
+/root/test/cmake/test_cmake/libs/SDL2/
+/root/test/cmake/test_cmake/libs/SDL2/lib/
+/root/test/cmake/test_cmake/libs/SDL2/lib/libSDL2.la
+/root/test/cmake/test_cmake/libs/SDL2/lib/libSDL2-2.0.so.0.2.1
+/root/test/cmake/test_cmake/libs/SDL2/lib/libSDL2main.a
+/root/test/cmake/test_cmake/libs/SDL2/lib/pkgconfig/
+/root/test/cmake/test_cmake/libs/SDL2/lib/pkgconfig/sdl2.pc
+/root/test/cmake/test_cmake/libs/SDL2/lib/libSDL2.so
+/root/test/cmake/test_cmake/libs/SDL2/lib/libSDL2_test.a
+/root/test/cmake/test_cmake/libs/SDL2/lib/libSDL2.a
+/root/test/cmake/test_cmake/libs/SDL2/lib/libSDL2-2.0.so.0
+/root/test/cmake/test_cmake/libs/libtinyxml2.so.2.2.0
+/root/test/cmake/test_cmake/libs/libmonitors.a
+/root/test/cmake/test_cmake/libs/libwidgets.a
+/root/test/cmake/test_cmake/libs/libloglib.so.1
+/root/test/cmake/test_cmake/libs/libini-parserlib.so.1.0.0
+/root/test/cmake/test_cmake/libs/libutilss.a
+/root/test/cmake/test_cmake/libs/libmonitorlib.so.1.0.0
+/root/test/cmake/test_cmake/libs/libplayerlib.so.1
+/root/test/cmake/test_cmake/libs/libfunctions_statistics.a
+/root/test/cmake/test_cmake/libs/libini-parserlib.so
+/root/test/cmake/test_cmake/libs/libjsoncpps.a
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  19
+[ 33%] Built target myplayer.elf
+make -f src/Log/CMakeFiles/functions_statistics.dir/build.make src/Log/CMakeFiles/functions_statistics.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Log /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Log /root/test/cmake/test_cmake/src/Log/CMakeFiles/functions_statistics.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Log/CMakeFiles/functions_statistics.dir/build.make src/Log/CMakeFiles/functions_statistics.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+make[2]: Nothing to be done for `src/Log/CMakeFiles/functions_statistics.dir/build'.
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  3
+[ 37%] Built target functions_statistics
+make -f src/Log/CMakeFiles/logs.dir/build.make src/Log/CMakeFiles/logs.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Log /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Log /root/test/cmake/test_cmake/src/Log/CMakeFiles/logs.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Log/CMakeFiles/logs.dir/build.make src/Log/CMakeFiles/logs.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+make[2]: Nothing to be done for `src/Log/CMakeFiles/logs.dir/build'.
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  16
+[ 40%] Built target logs
+make -f src/Utils/CMakeFiles/utilss.dir/build.make src/Utils/CMakeFiles/utilss.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Utils /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Utils /root/test/cmake/test_cmake/src/Utils/CMakeFiles/utilss.dir/DependInfo.cmake --color=
+Scanning dependencies of target utilss
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Utils/CMakeFiles/utilss.dir/build.make src/Utils/CMakeFiles/utilss.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 24
+[ 44%] Building C object src/Utils/CMakeFiles/utilss.dir/logParseFiles.c.o
+cd /root/test/cmake/test_cmake/src/Utils && /usr/bin/gcc   -I/mnt/hgfs/weather/my_player/src/includes -I/mnt/hgfs/weather/my_player/src/includes/ffmpeg -I/mnt/hgfs/weather/my_player/src/includes/SDL2 -I/mnt/hgfs/weather/my_player/src -I/mnt/hgfs/weather/my_player/src/Log -I/mnt/hgfs/weather/my_player/src/Monitor -I/mnt/hgfs/weather/my_player/src/Player -I/mnt/hgfs/weather/my_player/src/Utils -I/mnt/hgfs/weather/my_player/src/Utils/ParserIni -I/mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/weather/my_player/src/Widget    -o CMakeFiles/utilss.dir/logParseFiles.c.o   -c /mnt/hgfs/weather/my_player/src/Utils/logParseFiles.c
+Linking C static library ../../libs/libutilss.a
+cd /root/test/cmake/test_cmake/src/Utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/utilss.dir/cmake_clean_target.cmake
+cd /root/test/cmake/test_cmake/src/Utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/utilss.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../libs/libutilss.a  CMakeFiles/utilss.dir/logParseFiles.c.o
+/usr/bin/ranlib ../../libs/libutilss.a
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  24
+[ 44%] Built target utilss
+make -f src/Utils/ParserIni/CMakeFiles/ini-parserlib.dir/build.make src/Utils/ParserIni/CMakeFiles/ini-parserlib.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Utils/ParserIni /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Utils/ParserIni /root/test/cmake/test_cmake/src/Utils/ParserIni/CMakeFiles/ini-parserlib.dir/DependInfo.cmake --color=
+Scanning dependencies of target ini-parserlib
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Utils/ParserIni/CMakeFiles/ini-parserlib.dir/build.make src/Utils/ParserIni/CMakeFiles/ini-parserlib.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 5
+[ 48%] Building C object src/Utils/ParserIni/CMakeFiles/ini-parserlib.dir/dictionary.c.o
+cd /root/test/cmake/test_cmake/src/Utils/ParserIni && /usr/bin/gcc  -Dini_parserlib_EXPORTS -fPIC -I/mnt/hgfs/weather/my_player/src/includes -I/mnt/hgfs/weather/my_player/src/includes/ffmpeg -I/mnt/hgfs/weather/my_player/src/includes/SDL2 -I/mnt/hgfs/weather/my_player/src -I/mnt/hgfs/weather/my_player/src/Log -I/mnt/hgfs/weather/my_player/src/Monitor -I/mnt/hgfs/weather/my_player/src/Player -I/mnt/hgfs/weather/my_player/src/Utils -I/mnt/hgfs/weather/my_player/src/Utils/ParserIni -I/mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/weather/my_player/src/Widget -I/mnt/hgfs/weather/my_player/src/Utils/IniParser    -o CMakeFiles/ini-parserlib.dir/dictionary.c.o   -c /mnt/hgfs/weather/my_player/src/Utils/ParserIni/dictionary.c
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 6
+[ 51%] Building C object src/Utils/ParserIni/CMakeFiles/ini-parserlib.dir/iniparser.c.o
+cd /root/test/cmake/test_cmake/src/Utils/ParserIni && /usr/bin/gcc  -Dini_parserlib_EXPORTS -fPIC -I/mnt/hgfs/weather/my_player/src/includes -I/mnt/hgfs/weather/my_player/src/includes/ffmpeg -I/mnt/hgfs/weather/my_player/src/includes/SDL2 -I/mnt/hgfs/weather/my_player/src -I/mnt/hgfs/weather/my_player/src/Log -I/mnt/hgfs/weather/my_player/src/Monitor -I/mnt/hgfs/weather/my_player/src/Player -I/mnt/hgfs/weather/my_player/src/Utils -I/mnt/hgfs/weather/my_player/src/Utils/ParserIni -I/mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/weather/my_player/src/Widget -I/mnt/hgfs/weather/my_player/src/Utils/IniParser    -o CMakeFiles/ini-parserlib.dir/iniparser.c.o   -c /mnt/hgfs/weather/my_player/src/Utils/ParserIni/iniparser.c
+Linking C shared library ../../../libs/libini-parserlib.so
+cd /root/test/cmake/test_cmake/src/Utils/ParserIni && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/ini-parserlib.dir/link.txt --verbose=1
+/usr/bin/gcc  -fPIC    -shared -Wl,-soname,libini-parserlib.so.1 -o ../../../libs/libini-parserlib.so.1.0.0 CMakeFiles/ini-parserlib.dir/dictionary.c.o CMakeFiles/ini-parserlib.dir/iniparser.c.o -L/mnt/hgfs/weather/my_player/src/libs -L/root/test/cmake/test_cmake/libs/ffmpeg -L/root/test/cmake/test_cmake/libs/SDL2/lib -L/debug -L/release -L/usr/local/lib 
+cd /root/test/cmake/test_cmake/src/Utils/ParserIni && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../../libs/libini-parserlib.so.1.0.0 ../../../libs/libini-parserlib.so.1 ../../../libs/libini-parserlib.so
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  5 6
+[ 51%] Built target ini-parserlib
+make -f src/Utils/ParserIni/CMakeFiles/ini-parsers.dir/build.make src/Utils/ParserIni/CMakeFiles/ini-parsers.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Utils/ParserIni /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Utils/ParserIni /root/test/cmake/test_cmake/src/Utils/ParserIni/CMakeFiles/ini-parsers.dir/DependInfo.cmake --color=
+Scanning dependencies of target ini-parsers
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Utils/ParserIni/CMakeFiles/ini-parsers.dir/build.make src/Utils/ParserIni/CMakeFiles/ini-parsers.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 7
+[ 55%] Building C object src/Utils/ParserIni/CMakeFiles/ini-parsers.dir/dictionary.c.o
+cd /root/test/cmake/test_cmake/src/Utils/ParserIni && /usr/bin/gcc   -I/mnt/hgfs/weather/my_player/src/includes -I/mnt/hgfs/weather/my_player/src/includes/ffmpeg -I/mnt/hgfs/weather/my_player/src/includes/SDL2 -I/mnt/hgfs/weather/my_player/src -I/mnt/hgfs/weather/my_player/src/Log -I/mnt/hgfs/weather/my_player/src/Monitor -I/mnt/hgfs/weather/my_player/src/Player -I/mnt/hgfs/weather/my_player/src/Utils -I/mnt/hgfs/weather/my_player/src/Utils/ParserIni -I/mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/weather/my_player/src/Widget -I/mnt/hgfs/weather/my_player/src/Utils/IniParser    -o CMakeFiles/ini-parsers.dir/dictionary.c.o   -c /mnt/hgfs/weather/my_player/src/Utils/ParserIni/dictionary.c
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 8
+[ 59%] Building C object src/Utils/ParserIni/CMakeFiles/ini-parsers.dir/iniparser.c.o
+cd /root/test/cmake/test_cmake/src/Utils/ParserIni && /usr/bin/gcc   -I/mnt/hgfs/weather/my_player/src/includes -I/mnt/hgfs/weather/my_player/src/includes/ffmpeg -I/mnt/hgfs/weather/my_player/src/includes/SDL2 -I/mnt/hgfs/weather/my_player/src -I/mnt/hgfs/weather/my_player/src/Log -I/mnt/hgfs/weather/my_player/src/Monitor -I/mnt/hgfs/weather/my_player/src/Player -I/mnt/hgfs/weather/my_player/src/Utils -I/mnt/hgfs/weather/my_player/src/Utils/ParserIni -I/mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/weather/my_player/src/Widget -I/mnt/hgfs/weather/my_player/src/Utils/IniParser    -o CMakeFiles/ini-parsers.dir/iniparser.c.o   -c /mnt/hgfs/weather/my_player/src/Utils/ParserIni/iniparser.c
+Linking C static library ../../../libs/libini-parsers.a
+cd /root/test/cmake/test_cmake/src/Utils/ParserIni && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/ini-parsers.dir/cmake_clean_target.cmake
+cd /root/test/cmake/test_cmake/src/Utils/ParserIni && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/ini-parsers.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../../libs/libini-parsers.a  CMakeFiles/ini-parsers.dir/dictionary.c.o CMakeFiles/ini-parsers.dir/iniparser.c.o
+/usr/bin/ranlib ../../../libs/libini-parsers.a
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  7 8
+[ 59%] Built target ini-parsers
+make -f src/Utils/ParserJsonCPP/CMakeFiles/jsoncpplib.dir/build.make src/Utils/ParserJsonCPP/CMakeFiles/jsoncpplib.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Utils/ParserJsonCPP /root/test/cmake/test_cmake/src/Utils/ParserJsonCPP/CMakeFiles/jsoncpplib.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Utils/ParserJsonCPP/CMakeFiles/jsoncpplib.dir/build.make src/Utils/ParserJsonCPP/CMakeFiles/jsoncpplib.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+make[2]: Nothing to be done for `src/Utils/ParserJsonCPP/CMakeFiles/jsoncpplib.dir/build'.
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  9 10 11
+[ 70%] Built target jsoncpplib
+make -f src/Utils/ParserJsonCPP/CMakeFiles/jsoncpps.dir/build.make src/Utils/ParserJsonCPP/CMakeFiles/jsoncpps.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Utils/ParserJsonCPP /root/test/cmake/test_cmake/src/Utils/ParserJsonCPP/CMakeFiles/jsoncpps.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Utils/ParserJsonCPP/CMakeFiles/jsoncpps.dir/build.make src/Utils/ParserJsonCPP/CMakeFiles/jsoncpps.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+make[2]: Nothing to be done for `src/Utils/ParserJsonCPP/CMakeFiles/jsoncpps.dir/build'.
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  12 13 14
+[ 81%] Built target jsoncpps
+make -f src/Utils/ParserTinyXML2/CMakeFiles/tinyxml2.dir/build.make src/Utils/ParserTinyXML2/CMakeFiles/tinyxml2.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2 /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2/CMakeFiles/tinyxml2.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Utils/ParserTinyXML2/CMakeFiles/tinyxml2.dir/build.make src/Utils/ParserTinyXML2/CMakeFiles/tinyxml2.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+make[2]: Nothing to be done for `src/Utils/ParserTinyXML2/CMakeFiles/tinyxml2.dir/build'.
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  22
+[ 85%] Built target tinyxml2
+make -f src/Utils/ParserTinyXML2/CMakeFiles/DATA_COPY.dir/build.make src/Utils/ParserTinyXML2/CMakeFiles/DATA_COPY.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2 /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2/CMakeFiles/DATA_COPY.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Utils/ParserTinyXML2/CMakeFiles/DATA_COPY.dir/build.make src/Utils/ParserTinyXML2/CMakeFiles/DATA_COPY.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2 && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E copy /mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2/resources/dream.xml /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2/resources/
+cd /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2 && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E copy /mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2/resources/empty.xml /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2/resources/
+cd /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2 && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E copy /mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2/resources/utf8test.xml /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2/resources/
+cd /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2 && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E copy /mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2/resources/utf8testverify.xml /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2/resources/
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 
+[ 85%] Built target DATA_COPY
+make -f src/Utils/ParserTinyXML2/CMakeFiles/xmltest.dir/build.make src/Utils/ParserTinyXML2/CMakeFiles/xmltest.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2 /root/test/cmake/test_cmake/src/Utils/ParserTinyXML2/CMakeFiles/xmltest.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Utils/ParserTinyXML2/CMakeFiles/xmltest.dir/build.make src/Utils/ParserTinyXML2/CMakeFiles/xmltest.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+make[2]: Nothing to be done for `src/Utils/ParserTinyXML2/CMakeFiles/xmltest.dir/build'.
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  27
+[ 88%] Built target xmltest
+make -f src/Monitor/CMakeFiles/monitors.dir/build.make src/Monitor/CMakeFiles/monitors.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Monitor /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Monitor /root/test/cmake/test_cmake/src/Monitor/CMakeFiles/monitors.dir/DependInfo.cmake --color=
+Scanning dependencies of target monitors
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Monitor/CMakeFiles/monitors.dir/build.make src/Monitor/CMakeFiles/monitors.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 18
+[ 92%] Building C object src/Monitor/CMakeFiles/monitors.dir/logMonitor.c.o
+cd /root/test/cmake/test_cmake/src/Monitor && /usr/bin/gcc   -I/mnt/hgfs/weather/my_player/src/includes -I/mnt/hgfs/weather/my_player/src/includes/ffmpeg -I/mnt/hgfs/weather/my_player/src/includes/SDL2 -I/mnt/hgfs/weather/my_player/src -I/mnt/hgfs/weather/my_player/src/Log -I/mnt/hgfs/weather/my_player/src/Monitor -I/mnt/hgfs/weather/my_player/src/Player -I/mnt/hgfs/weather/my_player/src/Utils -I/mnt/hgfs/weather/my_player/src/Utils/ParserIni -I/mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/weather/my_player/src/Widget -I/mnt/hgfs/weather/my_player/src/Monitor/Util -I/mnt/hgfs/weather/my_player/src/Monitor/Server    -o CMakeFiles/monitors.dir/logMonitor.c.o   -c /mnt/hgfs/weather/my_player/src/Monitor/logMonitor.c
+Linking C static library ../../libs/libmonitors.a
+cd /root/test/cmake/test_cmake/src/Monitor && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/monitors.dir/cmake_clean_target.cmake
+cd /root/test/cmake/test_cmake/src/Monitor && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/monitors.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../libs/libmonitors.a  CMakeFiles/monitors.dir/logMonitor.c.o
+/usr/bin/ranlib ../../libs/libmonitors.a
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  18
+[ 92%] Built target monitors
+make -f src/Player/CMakeFiles/players.dir/build.make src/Player/CMakeFiles/players.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Player /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Player /root/test/cmake/test_cmake/src/Player/CMakeFiles/players.dir/DependInfo.cmake --color=
+Scanning dependencies of target players
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Player/CMakeFiles/players.dir/build.make src/Player/CMakeFiles/players.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 21
+[ 96%] Building C object src/Player/CMakeFiles/players.dir/LogPlayer.c.o
+cd /root/test/cmake/test_cmake/src/Player && /usr/bin/gcc   -I/mnt/hgfs/weather/my_player/src/includes -I/mnt/hgfs/weather/my_player/src/includes/ffmpeg -I/mnt/hgfs/weather/my_player/src/includes/SDL2 -I/mnt/hgfs/weather/my_player/src -I/mnt/hgfs/weather/my_player/src/Log -I/mnt/hgfs/weather/my_player/src/Monitor -I/mnt/hgfs/weather/my_player/src/Player -I/mnt/hgfs/weather/my_player/src/Utils -I/mnt/hgfs/weather/my_player/src/Utils/ParserIni -I/mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/weather/my_player/src/Widget    -o CMakeFiles/players.dir/LogPlayer.c.o   -c /mnt/hgfs/weather/my_player/src/Player/LogPlayer.c
+Linking C static library ../../libs/libplayers.a
+cd /root/test/cmake/test_cmake/src/Player && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/players.dir/cmake_clean_target.cmake
+cd /root/test/cmake/test_cmake/src/Player && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/players.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../libs/libplayers.a  CMakeFiles/players.dir/LogPlayer.c.o
+/usr/bin/ranlib ../../libs/libplayers.a
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  21
+[ 96%] Built target players
+make -f src/Widget/CMakeFiles/widgets.dir/build.make src/Widget/CMakeFiles/widgets.dir/depend
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+cd /root/test/cmake/test_cmake && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/weather/my_player /mnt/hgfs/weather/my_player/src/Widget /root/test/cmake/test_cmake /root/test/cmake/test_cmake/src/Widget /root/test/cmake/test_cmake/src/Widget/CMakeFiles/widgets.dir/DependInfo.cmake --color=
+Scanning dependencies of target widgets
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+make -f src/Widget/CMakeFiles/widgets.dir/build.make src/Widget/CMakeFiles/widgets.dir/build
+make[2]: Entering directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles 26
+[100%] Building C object src/Widget/CMakeFiles/widgets.dir/LogUI.c.o
+cd /root/test/cmake/test_cmake/src/Widget && /usr/bin/gcc   -I/mnt/hgfs/weather/my_player/src/includes -I/mnt/hgfs/weather/my_player/src/includes/ffmpeg -I/mnt/hgfs/weather/my_player/src/includes/SDL2 -I/mnt/hgfs/weather/my_player/src -I/mnt/hgfs/weather/my_player/src/Log -I/mnt/hgfs/weather/my_player/src/Monitor -I/mnt/hgfs/weather/my_player/src/Player -I/mnt/hgfs/weather/my_player/src/Utils -I/mnt/hgfs/weather/my_player/src/Utils/ParserIni -I/mnt/hgfs/weather/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/weather/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/weather/my_player/src/Widget    -o CMakeFiles/widgets.dir/LogUI.c.o   -c /mnt/hgfs/weather/my_player/src/Widget/LogUI.c
+Linking C static library ../../libs/libwidgets.a
+cd /root/test/cmake/test_cmake/src/Widget && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/widgets.dir/cmake_clean_target.cmake
+cd /root/test/cmake/test_cmake/src/Widget && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/widgets.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../libs/libwidgets.a  CMakeFiles/widgets.dir/LogUI.c.o
+/usr/bin/ranlib ../../libs/libwidgets.a
+make[2]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/cmake/test_cmake/CMakeFiles  26
+[100%] Built target widgets
+make[1]: Leaving directory `/root/test/cmake/test_cmake'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_start /root/test/cmake/test_cmake/CMakeFiles 0

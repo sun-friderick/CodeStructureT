@@ -1,0 +1,130 @@
+
+blit:
+	其意义是将一个平面的一部分或全部图象整块从这个平面复制到另一个平面。
+
+	This performs a fast blit from the source surface to the destination surface.  
+It assumes that the source and destination rectangles are the same size. If either
+'srcrect' or 'dstrect' are NULL, the entire surface (src or dst) is copied.  The 
+final blit rectangles are saved in 'srcrect' and 'dstrect' after all clipping is 
+performed. If the blit is successful, it returns 0, otherwise it returns -1.
+
+	The blit function should not be called on a locked surface.
+
+
+
+
+
+
+
+
+
+
+/** This structure should be treated as read-only, except for 'pixels',
+ *  which, if not NULL, contains the raw pixel data for the surface.
+ */
+typedef struct SDL_Surface {
+	Uint32 flags;				/**< Read-only */
+	SDL_PixelFormat *format;		/**< Read-only */
+	int w, h;				/**< Read-only */
+	Uint16 pitch;				/**< Read-only */
+	void *pixels;				/**< Read-write */
+	int offset;				/**< Private */
+
+	/** Hardware-specific surface info */
+	struct private_hwdata *hwdata;
+
+	/** clipping information */
+	SDL_Rect clip_rect;			/**< Read-only */
+	Uint32 unused1;				/**< for binary compatibility */
+
+	/** Allow recursive locks */
+	Uint32 locked;				/**< Private */
+
+	/** info for fast blit mapping to other surfaces */
+	struct SDL_BlitMap *map;		/**< Private */
+
+	/** format version, bumped at every change to invalidate blit maps */
+	unsigned int format_version;		/**< Private */
+
+	/** Reference count -- used when freeing surface */
+	int refcount;				/**< Read-mostly */
+} SDL_Surface;
+
+
+
+
+struct _cairo_surface {
+    const cairo_surface_backend_t *backend;
+
+    /* We allow surfaces to override the backend->type by shoving something
+     * else into surface->type. This is for "wrapper" surfaces that want to
+     * hide their internal type from the user-level API. */
+    cairo_surface_type_t type;
+
+    cairo_content_t content;
+
+    cairo_reference_count_t ref_count;
+    cairo_status_t status;
+    cairo_bool_t finished;
+    cairo_user_data_array_t user_data;
+
+    cairo_matrix_t device_transform;
+    cairo_matrix_t device_transform_inverse;
+
+    /* The actual resolution of the device, in dots per inch. */
+    double x_resolution;
+    double y_resolution;
+
+    /* The resolution that should be used when generating image-based
+     * fallback; generally only used by the analysis/paginated
+     * surfaces
+     */
+    double x_fallback_resolution;
+    double y_fallback_resolution;
+
+    cairo_clip_t *clip;
+
+    /*
+     * Each time a clip region is modified, it gets the next value in this
+     * sequence.  This means that clip regions for this surface are uniquely
+     * identified and updates to the clip can be readily identified
+     */
+    unsigned int next_clip_serial;
+    /*
+     * The serial number of the current clip.  This is set when
+     * the surface clipping is set.  The gstate can then cheaply
+     * check whether the surface clipping is already correct before
+     * performing a rendering operation.
+     *
+     * The special value '0' is reserved for the unclipped case.
+     */
+    unsigned int current_clip_serial;
+
+    /* A "snapshot" surface is immutable. See _cairo_surface_snapshot. */
+    cairo_bool_t is_snapshot;
+
+    /*
+     * Surface font options, falling back to backend's default options,
+     * and set using _cairo_surface_set_font_options(), and propagated by
+     * cairo_surface_create_similar().
+     */
+    cairo_bool_t has_font_options;
+    cairo_font_options_t font_options;
+};
+/**
+ * cairo_surface_t:
+ *
+ * A #cairo_surface_t represents an image, either as the destination
+ * of a drawing operation or as source when drawing onto another
+ * surface.  To draw to a #cairo_surface_t, create a cairo context
+ * with the surface as the target, using cairo_create().
+ *
+ * There are different subtypes of #cairo_surface_t for
+ * different drawing backends; for example, cairo_image_surface_create()
+ * creates a bitmap image in memory.
+ * The type of a surface can be queried with cairo_surface_get_type().
+ *
+ * Memory management of #cairo_surface_t is done with
+ * cairo_surface_reference() and cairo_surface_destroy().
+ **/
+typedef struct _cairo_surface cairo_surface_t;

@@ -1,0 +1,684 @@
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -H/mnt/hgfs/my_player -B/root/test/mytest/myplayer/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_start /root/test/mytest/myplayer/build/CMakeFiles /root/test/mytest/myplayer/build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory `/root/test/mytest/myplayer/build'
+make -f src/CMakeFiles/build_info.dir/build.make src/CMakeFiles/build_info.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src /root/test/mytest/myplayer/build/src/CMakeFiles/build_info.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/CMakeFiles/build_info.dir/build.make src/CMakeFiles/build_info.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 4
+[  5%] test make_version.sh
+cd /root/test/mytest/myplayer/build/src && exec /mnt/hgfs/my_player/config/scripts/make_version.sh
+-----------------------------------------------
+            generate build_info.h              
+-----------------------------------------------
+delete /mnt/hgfs/my_player/config/scripts/../../src/includes/build_info.h
+#ifndef __BUILD_INFO_H__
+#define __BUILD_INFO_H__
+ 
+ 
+#define g_make_build_date             "Fri Mar  6 13:34:37 CST 2015"
+#define g_make_build_user_name        "root"
+#define g_make_build_host_name        "sun-desktop"
+#define g_make_build_kernel_revision  "Linux 2.6.32-33-generic i686"
+#define g_make_svn_version    "5325"
+#define g_make_major_version  "1"
+#define g_make_minor_version  "0"
+#define g_make_build_version  "1.0.5325"
+ 
+#endif //__BUILD_INFO_H__
+-- written to /mnt/hgfs/my_player/config/scripts/../../src/includes/build_info.h
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 3
+[ 10%] test build_info
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  3 4
+[ 10%] Built target build_info
+make -f src/log/CMakeFiles/loglib.dir/build.make src/log/CMakeFiles/loglib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/log /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/log /root/test/mytest/myplayer/build/src/log/CMakeFiles/loglib.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/log/CMakeFiles/loglib.dir/build.make src/log/CMakeFiles/loglib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/log/CMakeFiles/loglib.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  13
+[ 15%] Built target loglib
+make -f src/log/CMakeFiles/functions_statisticslib.dir/build.make src/log/CMakeFiles/functions_statisticslib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/log /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/log /root/test/mytest/myplayer/build/src/log/CMakeFiles/functions_statisticslib.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/log/CMakeFiles/functions_statisticslib.dir/build.make src/log/CMakeFiles/functions_statisticslib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/log/CMakeFiles/functions_statisticslib.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  6
+[ 21%] Built target functions_statisticslib
+make -f src/CMakeFiles/myplayer.elf.dir/build.make src/CMakeFiles/myplayer.elf.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src /root/test/mytest/myplayer/build/src/CMakeFiles/myplayer.elf.dir/DependInfo.cmake --color=
+Scanning dependencies of target myplayer.elf
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/CMakeFiles/myplayer.elf.dir/build.make src/CMakeFiles/myplayer.elf.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 19
+[ 26%] Building C object src/CMakeFiles/myplayer.elf.dir/test_cmake.c.o
+cd /root/test/mytest/myplayer/build/src && /usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils    -o CMakeFiles/myplayer.elf.dir/test_cmake.c.o   -c /mnt/hgfs/my_player/src/test_cmake.c
+Linking C executable ../bin/myplayer.elf
+cd /root/test/mytest/myplayer/build/src && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/myplayer.elf.dir/link.txt --verbose=1
+/usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe    CMakeFiles/myplayer.elf.dir/test_cmake.c.o  -o ../bin/myplayer.elf -rdynamic -L/mnt/hgfs/my_player/src/libs -L/mnt/hgfs/my_player/src/libs/ffmpeg -L/mnt/hgfs/my_player/src/libs/SDL2 -L/mnt/hgfs/my_player/build/arch_sdk/debug -L/mnt/hgfs/my_player/build/arch_sdk/release ../libs/libloglib.so.1.0.0 -finstrument-functions ../libs/libfunctions_statisticslib.so -lpthread -Wl,-rpath,/mnt/hgfs/my_player/src/libs:/mnt/hgfs/my_player/src/libs/ffmpeg:/mnt/hgfs/my_player/src/libs/SDL2:/mnt/hgfs/my_player/build/arch_sdk/debug:/mnt/hgfs/my_player/build/arch_sdk/release:/root/test/mytest/myplayer/build/libs 
+cp myplayer.elf /mnt/hgfs/my_player/dist/myplayer.elf
+cd /root/test/mytest/myplayer/build/bin && sudo cp -arpf myplayer.elf /mnt/hgfs/my_player/dist
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  19
+[ 26%] Built target myplayer.elf
+make -f src/log/CMakeFiles/functions_statistics.dir/build.make src/log/CMakeFiles/functions_statistics.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/log /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/log /root/test/mytest/myplayer/build/src/log/CMakeFiles/functions_statistics.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/log/CMakeFiles/functions_statistics.dir/build.make src/log/CMakeFiles/functions_statistics.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/log/CMakeFiles/functions_statistics.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  5
+[ 31%] Built target functions_statistics
+make -f src/log/CMakeFiles/logs.dir/build.make src/log/CMakeFiles/logs.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/log /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/log /root/test/mytest/myplayer/build/src/log/CMakeFiles/logs.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/log/CMakeFiles/logs.dir/build.make src/log/CMakeFiles/logs.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/log/CMakeFiles/logs.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  14
+[ 36%] Built target logs
+make -f src/utils/CMakeFiles/base64lib.dir/build.make src/utils/CMakeFiles/base64lib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/base64lib.dir/DependInfo.cmake --color=
+Scanning dependencies of target base64lib
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/base64lib.dir/build.make src/utils/CMakeFiles/base64lib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 1
+[ 42%] Building CXX object src/utils/CMakeFiles/base64lib.dir/base64/Base64.cpp.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/c++   -Dbase64lib_EXPORTS -g -Wall -O2 -fpic -fPIC -pipe -fPIC -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/base64lib.dir/base64/Base64.cpp.o -c /mnt/hgfs/my_player/src/utils/base64/Base64.cpp
+Linking CXX shared library ../../libs/libbase64lib.so
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/base64lib.dir/link.txt --verbose=1
+/usr/bin/c++  -fPIC  -g -Wall -O2 -fpic -fPIC -pipe   -shared -Wl,-soname,libbase64lib.so.1 -o ../../libs/libbase64lib.so.1.0.0 CMakeFiles/base64lib.dir/base64/Base64.cpp.o -L/mnt/hgfs/my_player/src/libs -L/mnt/hgfs/my_player/src/libs/ffmpeg -L/mnt/hgfs/my_player/src/libs/SDL2 -L/mnt/hgfs/my_player/build/arch_sdk/debug -L/mnt/hgfs/my_player/build/arch_sdk/release -L/usr/local/lib 
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../libs/libbase64lib.so.1.0.0 ../../libs/libbase64lib.so.1 ../../libs/libbase64lib.so
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  1
+[ 42%] Built target base64lib
+make -f src/utils/CMakeFiles/base64s.dir/build.make src/utils/CMakeFiles/base64s.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/base64s.dir/DependInfo.cmake --color=
+Scanning dependencies of target base64s
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/base64s.dir/build.make src/utils/CMakeFiles/base64s.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 2
+[ 47%] Building CXX object src/utils/CMakeFiles/base64s.dir/base64/Base64.cpp.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/c++    -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/base64s.dir/base64/Base64.cpp.o -c /mnt/hgfs/my_player/src/utils/base64/Base64.cpp
+Linking CXX static library ../../libs/libbase64s.a
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/base64s.dir/cmake_clean_target.cmake
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/base64s.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../libs/libbase64s.a  CMakeFiles/base64s.dir/base64/Base64.cpp.o
+/usr/bin/ranlib ../../libs/libbase64s.a
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  2
+[ 47%] Built target base64s
+make -f src/utils/CMakeFiles/ini-parserlib.dir/build.make src/utils/CMakeFiles/ini-parserlib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/ini-parserlib.dir/DependInfo.cmake --color=
+Scanning dependencies of target ini-parserlib
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/ini-parserlib.dir/build.make src/utils/CMakeFiles/ini-parserlib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 7
+[ 52%] Building C object src/utils/CMakeFiles/ini-parserlib.dir/ini-parser/dictionary.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc  -Dini_parserlib_EXPORTS -g -Wall -O2 -fpic -fPIC -pipe -fPIC -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/ini-parserlib.dir/ini-parser/dictionary.c.o   -c /mnt/hgfs/my_player/src/utils/ini-parser/dictionary.c
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 8
+[ 57%] Building C object src/utils/CMakeFiles/ini-parserlib.dir/ini-parser/iniparser.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc  -Dini_parserlib_EXPORTS -g -Wall -O2 -fpic -fPIC -pipe -fPIC -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/ini-parserlib.dir/ini-parser/iniparser.c.o   -c /mnt/hgfs/my_player/src/utils/ini-parser/iniparser.c
+Linking C shared library ../../libs/libini-parserlib.so
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/ini-parserlib.dir/link.txt --verbose=1
+/usr/bin/gcc  -fPIC  -g -Wall -O2 -fpic -fPIC -pipe   -shared -Wl,-soname,libini-parserlib.so.1 -o ../../libs/libini-parserlib.so.1.0.0 CMakeFiles/ini-parserlib.dir/ini-parser/dictionary.c.o CMakeFiles/ini-parserlib.dir/ini-parser/iniparser.c.o -L/mnt/hgfs/my_player/src/libs -L/mnt/hgfs/my_player/src/libs/ffmpeg -L/mnt/hgfs/my_player/src/libs/SDL2 -L/mnt/hgfs/my_player/build/arch_sdk/debug -L/mnt/hgfs/my_player/build/arch_sdk/release -L/usr/local/lib 
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../libs/libini-parserlib.so.1.0.0 ../../libs/libini-parserlib.so.1 ../../libs/libini-parserlib.so
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  7 8
+[ 57%] Built target ini-parserlib
+make -f src/utils/CMakeFiles/ini-parsers.dir/build.make src/utils/CMakeFiles/ini-parsers.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/ini-parsers.dir/DependInfo.cmake --color=
+Scanning dependencies of target ini-parsers
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/ini-parsers.dir/build.make src/utils/CMakeFiles/ini-parsers.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 9
+[ 63%] Building C object src/utils/CMakeFiles/ini-parsers.dir/ini-parser/dictionary.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/ini-parsers.dir/ini-parser/dictionary.c.o   -c /mnt/hgfs/my_player/src/utils/ini-parser/dictionary.c
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 10
+[ 68%] Building C object src/utils/CMakeFiles/ini-parsers.dir/ini-parser/iniparser.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/ini-parsers.dir/ini-parser/iniparser.c.o   -c /mnt/hgfs/my_player/src/utils/ini-parser/iniparser.c
+Linking C static library ../../libs/libini-parsers.a
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/ini-parsers.dir/cmake_clean_target.cmake
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/ini-parsers.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../libs/libini-parsers.a  CMakeFiles/ini-parsers.dir/ini-parser/dictionary.c.o CMakeFiles/ini-parsers.dir/ini-parser/iniparser.c.o
+/usr/bin/ranlib ../../libs/libini-parsers.a
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  9 10
+[ 68%] Built target ini-parsers
+make -f src/utils/CMakeFiles/jsonlib.dir/build.make src/utils/CMakeFiles/jsonlib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/jsonlib.dir/DependInfo.cmake --color=
+Scanning dependencies of target jsonlib
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/jsonlib.dir/build.make src/utils/CMakeFiles/jsonlib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 11
+[ 73%] Building C object src/utils/CMakeFiles/jsonlib.dir/json/cJSON.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc  -Djsonlib_EXPORTS -g -Wall -O2 -fpic -fPIC -pipe -fPIC -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/jsonlib.dir/json/cJSON.c.o   -c /mnt/hgfs/my_player/src/utils/json/cJSON.c
+Linking C shared library ../../libs/libjsonlib.so
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/jsonlib.dir/link.txt --verbose=1
+/usr/bin/gcc  -fPIC  -g -Wall -O2 -fpic -fPIC -pipe   -shared -Wl,-soname,libjsonlib.so.1 -o ../../libs/libjsonlib.so.1.0.0 CMakeFiles/jsonlib.dir/json/cJSON.c.o -L/mnt/hgfs/my_player/src/libs -L/mnt/hgfs/my_player/src/libs/ffmpeg -L/mnt/hgfs/my_player/src/libs/SDL2 -L/mnt/hgfs/my_player/build/arch_sdk/debug -L/mnt/hgfs/my_player/build/arch_sdk/release -L/usr/local/lib 
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../libs/libjsonlib.so.1.0.0 ../../libs/libjsonlib.so.1 ../../libs/libjsonlib.so
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  11
+[ 73%] Built target jsonlib
+make -f src/utils/CMakeFiles/jsons.dir/build.make src/utils/CMakeFiles/jsons.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/jsons.dir/DependInfo.cmake --color=
+Scanning dependencies of target jsons
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/jsons.dir/build.make src/utils/CMakeFiles/jsons.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 12
+[ 78%] Building C object src/utils/CMakeFiles/jsons.dir/json/cJSON.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/jsons.dir/json/cJSON.c.o   -c /mnt/hgfs/my_player/src/utils/json/cJSON.c
+Linking C static library ../../libs/libjsons.a
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/jsons.dir/cmake_clean_target.cmake
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/jsons.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../libs/libjsons.a  CMakeFiles/jsons.dir/json/cJSON.c.o
+/usr/bin/ranlib ../../libs/libjsons.a
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  12
+[ 78%] Built target jsons
+make -f src/messages/CMakeFiles/messages.dir/build.make src/messages/CMakeFiles/messages.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/messages /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/messages /root/test/mytest/myplayer/build/src/messages/CMakeFiles/messages.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/messages/CMakeFiles/messages.dir/build.make src/messages/CMakeFiles/messages.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/messages/CMakeFiles/messages.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  15 16
+[ 89%] Built target messages
+make -f src/messages/CMakeFiles/messageslib.dir/build.make src/messages/CMakeFiles/messageslib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/messages /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/messages /root/test/mytest/myplayer/build/src/messages/CMakeFiles/messageslib.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/messages/CMakeFiles/messageslib.dir/build.make src/messages/CMakeFiles/messageslib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/messages/CMakeFiles/messageslib.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  17 18
+[100%] Built target messageslib
+make[1]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_start /root/test/mytest/myplayer/build/CMakeFiles 0
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -H/mnt/hgfs/my_player -B/root/test/mytest/myplayer/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_start /root/test/mytest/myplayer/build/CMakeFiles /root/test/mytest/myplayer/build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory `/root/test/mytest/myplayer/build'
+make -f src/CMakeFiles/build_info.dir/build.make src/CMakeFiles/build_info.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src /root/test/mytest/myplayer/build/src/CMakeFiles/build_info.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/CMakeFiles/build_info.dir/build.make src/CMakeFiles/build_info.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 4
+[  5%] test make_version.sh
+cd /root/test/mytest/myplayer/build/src && exec /mnt/hgfs/my_player/config/scripts/make_version.sh
+-----------------------------------------------
+            generate build_info.h              
+-----------------------------------------------
+delete /mnt/hgfs/my_player/config/scripts/../../src/includes/build_info.h
+#ifndef __BUILD_INFO_H__
+#define __BUILD_INFO_H__
+ 
+ 
+#define g_make_build_date             "Fri Mar  6 13:40:20 CST 2015"
+#define g_make_build_user_name        "root"
+#define g_make_build_host_name        "sun-desktop"
+#define g_make_build_kernel_revision  "Linux 2.6.32-33-generic i686"
+#define g_make_svn_version    "5325"
+#define g_make_major_version  "1"
+#define g_make_minor_version  "0"
+#define g_make_build_version  "1.0.5325"
+ 
+#endif //__BUILD_INFO_H__
+-- written to /mnt/hgfs/my_player/config/scripts/../../src/includes/build_info.h
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 3
+[ 10%] test build_info
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  3 4
+[ 10%] Built target build_info
+make -f src/messages/CMakeFiles/messageslib.dir/build.make src/messages/CMakeFiles/messageslib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/messages /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/messages /root/test/mytest/myplayer/build/src/messages/CMakeFiles/messageslib.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/messages/CMakeFiles/messageslib.dir/build.make src/messages/CMakeFiles/messageslib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/messages/CMakeFiles/messageslib.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  17 18
+[ 21%] Built target messageslib
+make -f src/log/CMakeFiles/loglib.dir/build.make src/log/CMakeFiles/loglib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/log /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/log /root/test/mytest/myplayer/build/src/log/CMakeFiles/loglib.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/log/CMakeFiles/loglib.dir/build.make src/log/CMakeFiles/loglib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/log/CMakeFiles/loglib.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  13
+[ 26%] Built target loglib
+make -f src/utils/CMakeFiles/jsonlib.dir/build.make src/utils/CMakeFiles/jsonlib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/jsonlib.dir/DependInfo.cmake --color=
+Scanning dependencies of target jsonlib
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/jsonlib.dir/build.make src/utils/CMakeFiles/jsonlib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 11
+[ 31%] Building C object src/utils/CMakeFiles/jsonlib.dir/json/cJSON.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc  -Djsonlib_EXPORTS -g -Wall -O2 -fpic -fPIC -pipe -fPIC -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/jsonlib.dir/json/cJSON.c.o   -c /mnt/hgfs/my_player/src/utils/json/cJSON.c
+Linking C shared library ../../libs/libjsonlib.so
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/jsonlib.dir/link.txt --verbose=1
+/usr/bin/gcc  -fPIC  -g -Wall -O2 -fpic -fPIC -pipe   -shared -Wl,-soname,libjsonlib.so.1 -o ../../libs/libjsonlib.so.1.0.0 CMakeFiles/jsonlib.dir/json/cJSON.c.o -L/mnt/hgfs/my_player/src/libs -L/mnt/hgfs/my_player/src/libs/ffmpeg -L/mnt/hgfs/my_player/src/libs/SDL2 -L/mnt/hgfs/my_player/build/arch_sdk/debug -L/mnt/hgfs/my_player/build/arch_sdk/release -L/usr/local/lib 
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../libs/libjsonlib.so.1.0.0 ../../libs/libjsonlib.so.1 ../../libs/libjsonlib.so
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  11
+[ 31%] Built target jsonlib
+make -f src/utils/CMakeFiles/base64lib.dir/build.make src/utils/CMakeFiles/base64lib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/base64lib.dir/DependInfo.cmake --color=
+Scanning dependencies of target base64lib
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/base64lib.dir/build.make src/utils/CMakeFiles/base64lib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 1
+[ 36%] Building CXX object src/utils/CMakeFiles/base64lib.dir/base64/Base64.cpp.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/c++   -Dbase64lib_EXPORTS -g -Wall -O2 -fpic -fPIC -pipe -fPIC -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/base64lib.dir/base64/Base64.cpp.o -c /mnt/hgfs/my_player/src/utils/base64/Base64.cpp
+Linking CXX shared library ../../libs/libbase64lib.so
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/base64lib.dir/link.txt --verbose=1
+/usr/bin/c++  -fPIC  -g -Wall -O2 -fpic -fPIC -pipe   -shared -Wl,-soname,libbase64lib.so.1 -o ../../libs/libbase64lib.so.1.0.0 CMakeFiles/base64lib.dir/base64/Base64.cpp.o -L/mnt/hgfs/my_player/src/libs -L/mnt/hgfs/my_player/src/libs/ffmpeg -L/mnt/hgfs/my_player/src/libs/SDL2 -L/mnt/hgfs/my_player/build/arch_sdk/debug -L/mnt/hgfs/my_player/build/arch_sdk/release -L/usr/local/lib 
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../libs/libbase64lib.so.1.0.0 ../../libs/libbase64lib.so.1 ../../libs/libbase64lib.so
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  1
+[ 36%] Built target base64lib
+make -f src/log/CMakeFiles/functions_statisticslib.dir/build.make src/log/CMakeFiles/functions_statisticslib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/log /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/log /root/test/mytest/myplayer/build/src/log/CMakeFiles/functions_statisticslib.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/log/CMakeFiles/functions_statisticslib.dir/build.make src/log/CMakeFiles/functions_statisticslib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/log/CMakeFiles/functions_statisticslib.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  6
+[ 42%] Built target functions_statisticslib
+make -f src/CMakeFiles/myplayer.elf.dir/build.make src/CMakeFiles/myplayer.elf.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src /root/test/mytest/myplayer/build/src/CMakeFiles/myplayer.elf.dir/DependInfo.cmake --color=
+Scanning dependencies of target myplayer.elf
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/CMakeFiles/myplayer.elf.dir/build.make src/CMakeFiles/myplayer.elf.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 19
+[ 47%] Building C object src/CMakeFiles/myplayer.elf.dir/test_cmake.c.o
+cd /root/test/mytest/myplayer/build/src && /usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils    -o CMakeFiles/myplayer.elf.dir/test_cmake.c.o   -c /mnt/hgfs/my_player/src/test_cmake.c
+Linking C executable ../bin/myplayer.elf
+cd /root/test/mytest/myplayer/build/src && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/myplayer.elf.dir/link.txt --verbose=1
+/usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe    CMakeFiles/myplayer.elf.dir/test_cmake.c.o  -o ../bin/myplayer.elf -rdynamic -L/mnt/hgfs/my_player/src/libs -L/mnt/hgfs/my_player/src/libs/ffmpeg -L/mnt/hgfs/my_player/src/libs/SDL2 -L/mnt/hgfs/my_player/build/arch_sdk/debug -L/mnt/hgfs/my_player/build/arch_sdk/release ../libs/libloglib.so.1.0.0 -finstrument-functions ../libs/libfunctions_statisticslib.so ../libs/libbase64lib.so.1.0.0 ../libs/libjsonlib.so.1.0.0 ../libs/libmessageslib.so.1.0.0 -lpthread -Wl,-rpath,/mnt/hgfs/my_player/src/libs:/mnt/hgfs/my_player/src/libs/ffmpeg:/mnt/hgfs/my_player/src/libs/SDL2:/mnt/hgfs/my_player/build/arch_sdk/debug:/mnt/hgfs/my_player/build/arch_sdk/release:/root/test/mytest/myplayer/build/libs 
+cp myplayer.elf /mnt/hgfs/my_player/dist/myplayer.elf
+cd /root/test/mytest/myplayer/build/bin && sudo cp -arpf myplayer.elf /mnt/hgfs/my_player/dist
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  19
+[ 47%] Built target myplayer.elf
+make -f src/log/CMakeFiles/functions_statistics.dir/build.make src/log/CMakeFiles/functions_statistics.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/log /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/log /root/test/mytest/myplayer/build/src/log/CMakeFiles/functions_statistics.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/log/CMakeFiles/functions_statistics.dir/build.make src/log/CMakeFiles/functions_statistics.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/log/CMakeFiles/functions_statistics.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  5
+[ 52%] Built target functions_statistics
+make -f src/log/CMakeFiles/logs.dir/build.make src/log/CMakeFiles/logs.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/log /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/log /root/test/mytest/myplayer/build/src/log/CMakeFiles/logs.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/log/CMakeFiles/logs.dir/build.make src/log/CMakeFiles/logs.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/log/CMakeFiles/logs.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  14
+[ 57%] Built target logs
+make -f src/utils/CMakeFiles/base64s.dir/build.make src/utils/CMakeFiles/base64s.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/base64s.dir/DependInfo.cmake --color=
+Scanning dependencies of target base64s
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/base64s.dir/build.make src/utils/CMakeFiles/base64s.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 2
+[ 63%] Building CXX object src/utils/CMakeFiles/base64s.dir/base64/Base64.cpp.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/c++    -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/base64s.dir/base64/Base64.cpp.o -c /mnt/hgfs/my_player/src/utils/base64/Base64.cpp
+Linking CXX static library ../../libs/libbase64s.a
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/base64s.dir/cmake_clean_target.cmake
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/base64s.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../libs/libbase64s.a  CMakeFiles/base64s.dir/base64/Base64.cpp.o
+/usr/bin/ranlib ../../libs/libbase64s.a
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  2
+[ 63%] Built target base64s
+make -f src/utils/CMakeFiles/ini-parserlib.dir/build.make src/utils/CMakeFiles/ini-parserlib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/ini-parserlib.dir/DependInfo.cmake --color=
+Scanning dependencies of target ini-parserlib
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/ini-parserlib.dir/build.make src/utils/CMakeFiles/ini-parserlib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 7
+[ 68%] Building C object src/utils/CMakeFiles/ini-parserlib.dir/ini-parser/dictionary.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc  -Dini_parserlib_EXPORTS -g -Wall -O2 -fpic -fPIC -pipe -fPIC -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/ini-parserlib.dir/ini-parser/dictionary.c.o   -c /mnt/hgfs/my_player/src/utils/ini-parser/dictionary.c
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 8
+[ 73%] Building C object src/utils/CMakeFiles/ini-parserlib.dir/ini-parser/iniparser.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc  -Dini_parserlib_EXPORTS -g -Wall -O2 -fpic -fPIC -pipe -fPIC -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/ini-parserlib.dir/ini-parser/iniparser.c.o   -c /mnt/hgfs/my_player/src/utils/ini-parser/iniparser.c
+Linking C shared library ../../libs/libini-parserlib.so
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/ini-parserlib.dir/link.txt --verbose=1
+/usr/bin/gcc  -fPIC  -g -Wall -O2 -fpic -fPIC -pipe   -shared -Wl,-soname,libini-parserlib.so.1 -o ../../libs/libini-parserlib.so.1.0.0 CMakeFiles/ini-parserlib.dir/ini-parser/dictionary.c.o CMakeFiles/ini-parserlib.dir/ini-parser/iniparser.c.o -L/mnt/hgfs/my_player/src/libs -L/mnt/hgfs/my_player/src/libs/ffmpeg -L/mnt/hgfs/my_player/src/libs/SDL2 -L/mnt/hgfs/my_player/build/arch_sdk/debug -L/mnt/hgfs/my_player/build/arch_sdk/release -L/usr/local/lib 
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../libs/libini-parserlib.so.1.0.0 ../../libs/libini-parserlib.so.1 ../../libs/libini-parserlib.so
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  7 8
+[ 73%] Built target ini-parserlib
+make -f src/utils/CMakeFiles/ini-parsers.dir/build.make src/utils/CMakeFiles/ini-parsers.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/ini-parsers.dir/DependInfo.cmake --color=
+Scanning dependencies of target ini-parsers
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/ini-parsers.dir/build.make src/utils/CMakeFiles/ini-parsers.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 9
+[ 78%] Building C object src/utils/CMakeFiles/ini-parsers.dir/ini-parser/dictionary.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/ini-parsers.dir/ini-parser/dictionary.c.o   -c /mnt/hgfs/my_player/src/utils/ini-parser/dictionary.c
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 10
+[ 84%] Building C object src/utils/CMakeFiles/ini-parsers.dir/ini-parser/iniparser.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/ini-parsers.dir/ini-parser/iniparser.c.o   -c /mnt/hgfs/my_player/src/utils/ini-parser/iniparser.c
+Linking C static library ../../libs/libini-parsers.a
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/ini-parsers.dir/cmake_clean_target.cmake
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/ini-parsers.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../libs/libini-parsers.a  CMakeFiles/ini-parsers.dir/ini-parser/dictionary.c.o CMakeFiles/ini-parsers.dir/ini-parser/iniparser.c.o
+/usr/bin/ranlib ../../libs/libini-parsers.a
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  9 10
+[ 84%] Built target ini-parsers
+make -f src/utils/CMakeFiles/jsons.dir/build.make src/utils/CMakeFiles/jsons.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/jsons.dir/DependInfo.cmake --color=
+Scanning dependencies of target jsons
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/jsons.dir/build.make src/utils/CMakeFiles/jsons.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 12
+[ 89%] Building C object src/utils/CMakeFiles/jsons.dir/json/cJSON.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/jsons.dir/json/cJSON.c.o   -c /mnt/hgfs/my_player/src/utils/json/cJSON.c
+Linking C static library ../../libs/libjsons.a
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/jsons.dir/cmake_clean_target.cmake
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/jsons.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../libs/libjsons.a  CMakeFiles/jsons.dir/json/cJSON.c.o
+/usr/bin/ranlib ../../libs/libjsons.a
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  12
+[ 89%] Built target jsons
+make -f src/messages/CMakeFiles/messages.dir/build.make src/messages/CMakeFiles/messages.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/messages /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/messages /root/test/mytest/myplayer/build/src/messages/CMakeFiles/messages.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/messages/CMakeFiles/messages.dir/build.make src/messages/CMakeFiles/messages.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/messages/CMakeFiles/messages.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  15 16
+[100%] Built target messages
+make[1]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_start /root/test/mytest/myplayer/build/CMakeFiles 0
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -H/mnt/hgfs/my_player -B/root/test/mytest/myplayer/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_start /root/test/mytest/myplayer/build/CMakeFiles /root/test/mytest/myplayer/build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory `/root/test/mytest/myplayer/build'
+make -f src/CMakeFiles/build_info.dir/build.make src/CMakeFiles/build_info.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src /root/test/mytest/myplayer/build/src/CMakeFiles/build_info.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/CMakeFiles/build_info.dir/build.make src/CMakeFiles/build_info.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 4
+[  5%] test make_version.sh
+cd /root/test/mytest/myplayer/build/src && exec /mnt/hgfs/my_player/config/scripts/make_version.sh
+-----------------------------------------------
+            generate build_info.h              
+-----------------------------------------------
+delete /mnt/hgfs/my_player/config/scripts/../../src/includes/build_info.h
+#ifndef __BUILD_INFO_H__
+#define __BUILD_INFO_H__
+ 
+ 
+#define g_make_build_date             "Fri Mar  6 13:42:42 CST 2015"
+#define g_make_build_user_name        "root"
+#define g_make_build_host_name        "sun-desktop"
+#define g_make_build_kernel_revision  "Linux 2.6.32-33-generic i686"
+#define g_make_svn_version    "5325"
+#define g_make_major_version  "1"
+#define g_make_minor_version  "0"
+#define g_make_build_version  "1.0.5325"
+ 
+#endif //__BUILD_INFO_H__
+-- written to /mnt/hgfs/my_player/config/scripts/../../src/includes/build_info.h
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 3
+[ 10%] test build_info
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  3 4
+[ 10%] Built target build_info
+make -f src/log/CMakeFiles/loglib.dir/build.make src/log/CMakeFiles/loglib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/log /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/log /root/test/mytest/myplayer/build/src/log/CMakeFiles/loglib.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/log/CMakeFiles/loglib.dir/build.make src/log/CMakeFiles/loglib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/log/CMakeFiles/loglib.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  13
+[ 15%] Built target loglib
+make -f src/utils/CMakeFiles/jsonlib.dir/build.make src/utils/CMakeFiles/jsonlib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/jsonlib.dir/DependInfo.cmake --color=
+Scanning dependencies of target jsonlib
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/jsonlib.dir/build.make src/utils/CMakeFiles/jsonlib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 11
+[ 21%] Building C object src/utils/CMakeFiles/jsonlib.dir/json/cJSON.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc  -Djsonlib_EXPORTS -g -Wall -O2 -fpic -fPIC -pipe -fPIC -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/jsonlib.dir/json/cJSON.c.o   -c /mnt/hgfs/my_player/src/utils/json/cJSON.c
+Linking C shared library ../../libs/libjsonlib.so
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/jsonlib.dir/link.txt --verbose=1
+/usr/bin/gcc  -fPIC  -g -Wall -O2 -fpic -fPIC -pipe   -shared -Wl,-soname,libjsonlib.so.1 -o ../../libs/libjsonlib.so.1.0.0 CMakeFiles/jsonlib.dir/json/cJSON.c.o -L/mnt/hgfs/my_player/src/libs -L/mnt/hgfs/my_player/src/libs/ffmpeg -L/mnt/hgfs/my_player/src/libs/SDL2 -L/mnt/hgfs/my_player/build/arch_sdk/debug -L/mnt/hgfs/my_player/build/arch_sdk/release -L/usr/local/lib 
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../libs/libjsonlib.so.1.0.0 ../../libs/libjsonlib.so.1 ../../libs/libjsonlib.so
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  11
+[ 21%] Built target jsonlib
+make -f src/messages/CMakeFiles/messageslib.dir/build.make src/messages/CMakeFiles/messageslib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/messages /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/messages /root/test/mytest/myplayer/build/src/messages/CMakeFiles/messageslib.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/messages/CMakeFiles/messageslib.dir/build.make src/messages/CMakeFiles/messageslib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/messages/CMakeFiles/messageslib.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  17 18
+[ 31%] Built target messageslib
+make -f src/utils/CMakeFiles/base64lib.dir/build.make src/utils/CMakeFiles/base64lib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/base64lib.dir/DependInfo.cmake --color=
+Scanning dependencies of target base64lib
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/base64lib.dir/build.make src/utils/CMakeFiles/base64lib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 1
+[ 36%] Building CXX object src/utils/CMakeFiles/base64lib.dir/base64/Base64.cpp.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/c++   -Dbase64lib_EXPORTS -g -Wall -O2 -fpic -fPIC -pipe -fPIC -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/base64lib.dir/base64/Base64.cpp.o -c /mnt/hgfs/my_player/src/utils/base64/Base64.cpp
+Linking CXX shared library ../../libs/libbase64lib.so
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/base64lib.dir/link.txt --verbose=1
+/usr/bin/c++  -fPIC  -g -Wall -O2 -fpic -fPIC -pipe   -shared -Wl,-soname,libbase64lib.so.1 -o ../../libs/libbase64lib.so.1.0.0 CMakeFiles/base64lib.dir/base64/Base64.cpp.o -L/mnt/hgfs/my_player/src/libs -L/mnt/hgfs/my_player/src/libs/ffmpeg -L/mnt/hgfs/my_player/src/libs/SDL2 -L/mnt/hgfs/my_player/build/arch_sdk/debug -L/mnt/hgfs/my_player/build/arch_sdk/release -L/usr/local/lib 
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../libs/libbase64lib.so.1.0.0 ../../libs/libbase64lib.so.1 ../../libs/libbase64lib.so
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  1
+[ 36%] Built target base64lib
+make -f src/utils/CMakeFiles/ini-parserlib.dir/build.make src/utils/CMakeFiles/ini-parserlib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/ini-parserlib.dir/DependInfo.cmake --color=
+Scanning dependencies of target ini-parserlib
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/ini-parserlib.dir/build.make src/utils/CMakeFiles/ini-parserlib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 7
+[ 42%] Building C object src/utils/CMakeFiles/ini-parserlib.dir/ini-parser/dictionary.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc  -Dini_parserlib_EXPORTS -g -Wall -O2 -fpic -fPIC -pipe -fPIC -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/ini-parserlib.dir/ini-parser/dictionary.c.o   -c /mnt/hgfs/my_player/src/utils/ini-parser/dictionary.c
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 8
+[ 47%] Building C object src/utils/CMakeFiles/ini-parserlib.dir/ini-parser/iniparser.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc  -Dini_parserlib_EXPORTS -g -Wall -O2 -fpic -fPIC -pipe -fPIC -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/ini-parserlib.dir/ini-parser/iniparser.c.o   -c /mnt/hgfs/my_player/src/utils/ini-parser/iniparser.c
+Linking C shared library ../../libs/libini-parserlib.so
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/ini-parserlib.dir/link.txt --verbose=1
+/usr/bin/gcc  -fPIC  -g -Wall -O2 -fpic -fPIC -pipe   -shared -Wl,-soname,libini-parserlib.so.1 -o ../../libs/libini-parserlib.so.1.0.0 CMakeFiles/ini-parserlib.dir/ini-parser/dictionary.c.o CMakeFiles/ini-parserlib.dir/ini-parser/iniparser.c.o -L/mnt/hgfs/my_player/src/libs -L/mnt/hgfs/my_player/src/libs/ffmpeg -L/mnt/hgfs/my_player/src/libs/SDL2 -L/mnt/hgfs/my_player/build/arch_sdk/debug -L/mnt/hgfs/my_player/build/arch_sdk/release -L/usr/local/lib 
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_symlink_library ../../libs/libini-parserlib.so.1.0.0 ../../libs/libini-parserlib.so.1 ../../libs/libini-parserlib.so
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  7 8
+[ 47%] Built target ini-parserlib
+make -f src/log/CMakeFiles/functions_statisticslib.dir/build.make src/log/CMakeFiles/functions_statisticslib.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/log /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/log /root/test/mytest/myplayer/build/src/log/CMakeFiles/functions_statisticslib.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/log/CMakeFiles/functions_statisticslib.dir/build.make src/log/CMakeFiles/functions_statisticslib.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/log/CMakeFiles/functions_statisticslib.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  6
+[ 52%] Built target functions_statisticslib
+make -f src/CMakeFiles/myplayer.elf.dir/build.make src/CMakeFiles/myplayer.elf.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src /root/test/mytest/myplayer/build/src/CMakeFiles/myplayer.elf.dir/DependInfo.cmake --color=
+Scanning dependencies of target myplayer.elf
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/CMakeFiles/myplayer.elf.dir/build.make src/CMakeFiles/myplayer.elf.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 19
+[ 57%] Building C object src/CMakeFiles/myplayer.elf.dir/test_cmake.c.o
+cd /root/test/mytest/myplayer/build/src && /usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils    -o CMakeFiles/myplayer.elf.dir/test_cmake.c.o   -c /mnt/hgfs/my_player/src/test_cmake.c
+Linking C executable ../bin/myplayer.elf
+cd /root/test/mytest/myplayer/build/src && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/myplayer.elf.dir/link.txt --verbose=1
+/usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe    CMakeFiles/myplayer.elf.dir/test_cmake.c.o  -o ../bin/myplayer.elf -rdynamic -L/mnt/hgfs/my_player/src/libs -L/mnt/hgfs/my_player/src/libs/ffmpeg -L/mnt/hgfs/my_player/src/libs/SDL2 -L/mnt/hgfs/my_player/build/arch_sdk/debug -L/mnt/hgfs/my_player/build/arch_sdk/release ../libs/libloglib.so.1.0.0 -finstrument-functions ../libs/libfunctions_statisticslib.so ../libs/libbase64lib.so.1.0.0 ../libs/libjsonlib.so.1.0.0 ../libs/libini-parserlib.so.1.0.0 ../libs/libmessageslib.so.1.0.0 -lpthread -Wl,-rpath,/mnt/hgfs/my_player/src/libs:/mnt/hgfs/my_player/src/libs/ffmpeg:/mnt/hgfs/my_player/src/libs/SDL2:/mnt/hgfs/my_player/build/arch_sdk/debug:/mnt/hgfs/my_player/build/arch_sdk/release:/root/test/mytest/myplayer/build/libs 
+cp myplayer.elf /mnt/hgfs/my_player/dist/myplayer.elf
+cd /root/test/mytest/myplayer/build/bin && sudo cp -arpf myplayer.elf /mnt/hgfs/my_player/dist
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  19
+[ 57%] Built target myplayer.elf
+make -f src/log/CMakeFiles/functions_statistics.dir/build.make src/log/CMakeFiles/functions_statistics.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/log /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/log /root/test/mytest/myplayer/build/src/log/CMakeFiles/functions_statistics.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/log/CMakeFiles/functions_statistics.dir/build.make src/log/CMakeFiles/functions_statistics.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/log/CMakeFiles/functions_statistics.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  5
+[ 63%] Built target functions_statistics
+make -f src/log/CMakeFiles/logs.dir/build.make src/log/CMakeFiles/logs.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/log /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/log /root/test/mytest/myplayer/build/src/log/CMakeFiles/logs.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/log/CMakeFiles/logs.dir/build.make src/log/CMakeFiles/logs.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/log/CMakeFiles/logs.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  14
+[ 68%] Built target logs
+make -f src/utils/CMakeFiles/base64s.dir/build.make src/utils/CMakeFiles/base64s.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/base64s.dir/DependInfo.cmake --color=
+Scanning dependencies of target base64s
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/base64s.dir/build.make src/utils/CMakeFiles/base64s.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 2
+[ 73%] Building CXX object src/utils/CMakeFiles/base64s.dir/base64/Base64.cpp.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/c++    -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/base64s.dir/base64/Base64.cpp.o -c /mnt/hgfs/my_player/src/utils/base64/Base64.cpp
+Linking CXX static library ../../libs/libbase64s.a
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/base64s.dir/cmake_clean_target.cmake
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/base64s.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../libs/libbase64s.a  CMakeFiles/base64s.dir/base64/Base64.cpp.o
+/usr/bin/ranlib ../../libs/libbase64s.a
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  2
+[ 73%] Built target base64s
+make -f src/utils/CMakeFiles/ini-parsers.dir/build.make src/utils/CMakeFiles/ini-parsers.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/ini-parsers.dir/DependInfo.cmake --color=
+Scanning dependencies of target ini-parsers
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/ini-parsers.dir/build.make src/utils/CMakeFiles/ini-parsers.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 9
+[ 78%] Building C object src/utils/CMakeFiles/ini-parsers.dir/ini-parser/dictionary.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/ini-parsers.dir/ini-parser/dictionary.c.o   -c /mnt/hgfs/my_player/src/utils/ini-parser/dictionary.c
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 10
+[ 84%] Building C object src/utils/CMakeFiles/ini-parsers.dir/ini-parser/iniparser.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/ini-parsers.dir/ini-parser/iniparser.c.o   -c /mnt/hgfs/my_player/src/utils/ini-parser/iniparser.c
+Linking C static library ../../libs/libini-parsers.a
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/ini-parsers.dir/cmake_clean_target.cmake
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/ini-parsers.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../libs/libini-parsers.a  CMakeFiles/ini-parsers.dir/ini-parser/dictionary.c.o CMakeFiles/ini-parsers.dir/ini-parser/iniparser.c.o
+/usr/bin/ranlib ../../libs/libini-parsers.a
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  9 10
+[ 84%] Built target ini-parsers
+make -f src/utils/CMakeFiles/jsons.dir/build.make src/utils/CMakeFiles/jsons.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/utils /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/utils /root/test/mytest/myplayer/build/src/utils/CMakeFiles/jsons.dir/DependInfo.cmake --color=
+Scanning dependencies of target jsons
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/utils/CMakeFiles/jsons.dir/build.make src/utils/CMakeFiles/jsons.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 12
+[ 89%] Building C object src/utils/CMakeFiles/jsons.dir/json/cJSON.c.o
+cd /root/test/mytest/myplayer/build/src/utils && /usr/bin/gcc   -g -Wall -O2 -fpic -fPIC -pipe -I/mnt/hgfs/my_player/src/includes -I/mnt/hgfs/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_player/src/includes/SDL2 -I/mnt/hgfs/my_player/src/log -I/mnt/hgfs/my_player/src/messages -I/mnt/hgfs/my_player/src/utils -I/mnt/hgfs/my_player/src/utils/base64 -I/mnt/hgfs/my_player/src/utils/ini-parser -I/mnt/hgfs/my_player/src/utils/json    -o CMakeFiles/jsons.dir/json/cJSON.c.o   -c /mnt/hgfs/my_player/src/utils/json/cJSON.c
+Linking C static library ../../libs/libjsons.a
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -P CMakeFiles/jsons.dir/cmake_clean_target.cmake
+cd /root/test/mytest/myplayer/build/src/utils && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_link_script CMakeFiles/jsons.dir/link.txt --verbose=1
+/usr/bin/ar cr ../../libs/libjsons.a  CMakeFiles/jsons.dir/json/cJSON.c.o
+/usr/bin/ranlib ../../libs/libjsons.a
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  12
+[ 89%] Built target jsons
+make -f src/messages/CMakeFiles/messages.dir/build.make src/messages/CMakeFiles/messages.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_player /mnt/hgfs/my_player/src/messages /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/messages /root/test/mytest/myplayer/build/src/messages/CMakeFiles/messages.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/messages/CMakeFiles/messages.dir/build.make src/messages/CMakeFiles/messages.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+make[2]: Nothing to be done for `src/messages/CMakeFiles/messages.dir/build'.
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  15 16
+[100%] Built target messages
+make[1]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_start /root/test/mytest/myplayer/build/CMakeFiles 0

@@ -1,0 +1,21 @@
+
+
+INCLUDE_DIRECTORIES(${IPCAM_SOURCE_DIR}/arch/${CHIP}/include)
+INCLUDE_DIRECTORIES(${IPCAM_SOURCE_DIR}/libs/include)
+INCLUDE_DIRECTORIES(${IPCAM_SOURCE_DIR}/porting/include)
+INCLUDE_DIRECTORIES(${IPCAM_SOURCE_DIR}/module/include)
+INCLUDE_DIRECTORIES(${IPCAM_SOURCE_DIR}/share/network/include)
+
+PROJECT(NETWORKLIB)
+
+SET(NETWORKSRC 
+				src/iwlib.c
+				src/iwlist.c
+				src/MNetwork.c
+	)
+
+ADD_LIBRARY(MNetwork STATIC ${NETWORKSRC})
+ 
+#INSTALL(TARGETS MNetwork DESTINATION libs)
+#INSTALL(FILES include/MNetwork.h DESTINATION libs/include)
+

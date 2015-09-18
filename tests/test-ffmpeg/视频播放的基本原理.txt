@@ -1,0 +1,162 @@
+
+视频播放的基本原理
+
+
+vlc视频播放的基本原理
+
+VLC是一个功能强大的玩意，能做很多有意思的事情。
+
+最简单的，从界面打开一个文件播放，也可以在命令行下使用，如
+C:/Program Files/VideoLAN/VLC>vlc.exe test.ts
+
+获取内置的帮助，会写到vlc-help.txt
+C:/Program Files/VideoLAN/VLC>vlc.exe -h
+
+获取更详细的帮助，有大量的选项介绍
+C:/Program Files/VideoLAN/VLC>vlc.exe -H
+
+在线使用帮助
+http://www.videolan.org/doc/play-howto/en/play-howto-en.html
+http://www.videolan.org/doc/streaming-howto/en/streaming-howto-en.html
+
+搜索并显示可用的模块列表
+C:/Program Files/VideoLAN/VLC>vlc.exe -l
+
+Windows下，默认情况，VLC的配置文件在 %APPDATA%/vlc/vlcrc
+%APPDATA%在XP下通常是 C:/Documents and Settings/用户名/Application Data
+Linux下，在用户home目录的/.vlc/中
+
+vlc的选项完全可以通过修改vlcrc来设置，界面只是略微方便一点
+
+重置所有选项到默认状态
+C:/Program Files/VideoLAN/VLC>vlc.exe –reset-config
+
+VLC从vlcrc中指定的plugin-path，以及当前目录的modules和plugins目录来递归查找plugin
+
+VLC的大部分功能都是通过plugin来实现的。VLC默认有大量的动态插件，例如官方VLC 0.8.6e有210个插件。为了加快启动速度，vlc会在%APPDATA%/vlc/cache中缓存plugin的列表，选项plugins-cache=0可以禁止缓存plugin
+
+打开一个UDP组播流，组播组 239.255.1.1，端口 4567，默认端口1234
+对于rtp协议，VLC会自动识别，写udp还是rtp都没问题
+C:/Program Files/VideoLAN/VLC>vlc.exe udp://@239.255.1.1:4567
+
+在本地UDP端口 888 接收流, “@”表示绑定一个地址，而不是连接该地址
+C:/Program Files/VideoLAN/VLC>vlc.exe udp://@888
+
+串流输出，就是在播放的时候，以某种方式向外传送视频，在打开界面
+的串流/保存 中设置会比较方便
+例如，循环播放test.ts， 以rtp方式传送到224.1.1.1端口1234, 同时显示视频
+vlc.exe test.ts –loop :sout=#duplicate{dst=std{access=rtp,mux=ts,dst=224.1.1.1:1234},dst=display}
+例如，接收UDP端口888，数据全部保存到C:/dump.ts
+vlc.exe udp://@888 :demux=dump :demuxdump-file=”C:/dump.ts”
+
+关于Windows下视频输出模块
+Direct3D ：效果比DirectX差一点，但是方便截图，也可以在图像上实现alpha
+DirectX：效果最好，利用DirectX的显示加速
+OpenGL：在不同的硬件上表现不太一样
+WinGDI：最慢的一种，不需要显卡加速
+caca：用彩色的Assic字符来显示，很有意思
+临时启用某个视频输出，可以这样
+C:/Program Files/VideoLAN/VLC-0.8.6e>vlc test.ts –vout=caca
+
+ActiveX控件
+官方发布的VLC自带ActiveX控件 axvlc.dll，注册之后可以方便的在应用程序和网页
+中使用VLC，注册的办法是
+C:/Program Files/VideoLAN/VLC-0.8.6e>regsvr32 axvlc.dll
+ActiveX VLC的使用方法可以参考源代码中ActiveX目录的README.TXT和test.html
+ActiveX控件的接口有第一版和第二版，第一版简单，功能少，已经不再维护
+建议用第二版本，功能多一点
+
+Mozilla Plugin
+你还可以在Windows和Linux的Firefox中使用VLC。Windows下可以在安装VLC的时候选上
+Mozilla plugin，事实上它做的就是在HKLM_Software_MozillaPlugin键下添加一个VLC的子键。
+Linux下就不太清楚了，但是你可以把libvlcplugin.so（或者叫npvlc.so）和插件目录
+放到Firefox的plugins目录，来使之生效。
+同样这适用于基于Xulrunner的应用程序，事实上像 Miro、SongBird等xul应用都是用的
+这个插件。
+与ActiveX类似的，VLC的Mozilla Plugin也有两套接口，建议用新的第二版。
+
+注册表
+在Windows下VLC只使用很少量的注册表的信息，最重要的一条是HKLM_Software_VLC键
+下的InstallDir项，VLC的Mozilla Plugin和ActiveX控件通过这一项来定位其插件的目录
+
+Telnet、Http控制
+对VLC来说，控制界面都是Interface类的模块，你可以使用各种控制模块。Windows下
+默认使用的是wxwidgets图形界面，你还可以使用http、telnet等界面，来远程控制VLC，
+够酷吧？如果你用VLC在服务器上专门作视频流转发一类的事情，这种远程界面
+可以帮上大忙。
+
+视频过滤器
+0.8系列中有多达13种视频过滤器，为视频添加各种效果和特殊处理。用的比
+较多的是反交错deinterlace过滤器，在观看MPEG2视频时很有用。
+
+Skin2界面
+一个漂亮一点的，可以换肤的界面，觉得它不太稳定很少用。
+
+其他的
+播放DVD、VCD光盘，打开DirectShow设备，播放当前屏幕…很多好玩的功能可以去摸索一下
+
+一些问题
+
+目前的VLC无法播放Real视频，如rm、rmvb。其实从0.9版本的VLC开始可以依赖其他解码
+器播放。但就目前测试的情况来看，顺序播放没问题，但是拖动则效果很差
+
+RTSP的播放，拖动有问题，在获取播放位置时有缺陷。例如和达尔文服务器的配合。
+
+ 
+
+视频播放的基本原理
+
+    当初看VLC代码花了不少时间，其中很大的原因是不太了解视频播放的基本原理。现在看来，几乎所有的视频播放器，如VLC、
+MPlayer、Xine，包括DirectShow，在播放视频的原理和架构上都是非常相似的，理解这个对理解VLC的源码会有事半功倍的效果。
+
+大致的来说，播放一个视频分为4个步骤：
+    1. acess 访问，或者理解为接收、获取、得到
+    2. demux 解复用，就是把通常合在一起的音频和视频分离(还有可能的字幕)
+    3. decode 解码，包括音频和视频的解码
+    4. output 输出，也分为音频和视频的输出（aout和vout）
+    
+access部分:
+        拿播放一个UDP组播的MPEG TS流来说吧，access部分负责从网络接收组播流，放到VLC的内存缓冲区中，access模块关注IP协议，
+    如是否IPv6、组播地址、组播协议、端口等信息；如果检测出来是RTP协议（RTP协议在UDP头部简单得加上了固定12个字节的信息），
+    还要分析RTP头部信息。这部分可以参看VLC源码 /modules/access/udp.c 。在同目录下还可以看到大量的access模块，如file、http、
+    dvd、ftp、smb、tcp、dshow、mms、v4l…等等
+    
+demux部分:
+        而demux部分首先要解析TS流的信息。TS格式是MPEG2协议的一部分，概括地说，TS通常是固定188字节的一个packet，一个TS流
+    可以包含多个program（节目），一个program又可以包含多个视频、音频、和文字信息的ES流；每个ES流会有不同的PID标示。而又
+    为了可以分析这些ES流，TS有一些固定的PID用来间隔发送program和es流信息的表格：PAT和PMT表。关于TS格式的详细信息可以去
+    google一下。
+        VLC专门做了一个独立的库libdvbpsi来解析和编码TS流，而调用它的代码可以参见VLC源码 /modules/demux/ts.c。
+        其实之所以需要demux，是因为音视频在制作的时候实际上都是独立编码的，得到的是分开的数据，为了传输方便必须要用某种
+    方式合起来，这就有了各种封装格式也就有了demux。
+    
+decode 解码部分：
+        demux分解出来的音频和视频流分别送往音频解码器和视频解码器。因为原始的音视频都是占用大量空间，而且冗余度较高的数据，
+    通常在制作的时候就会进行某种压缩。这就是我们熟知的音视频编码格式，包括MPEG1（VCD）、MPEG2（DVD）、MPEG4、H.264、rmvb等
+    等。音视频解码器的作用就是把这些压缩了的数据还原成原始的音视频数据。VLC解码MPEG2使用了一个独立的库libmpeg2，调用它的源
+    文件是 /modules/codec/libmpeg2.c。VLC关于编解码的模块都放在/modules/codec目录下，其中包括著名的庞大的ffmpeg。
+        解码器，例如视频解码器输出的是一张一张的类似位图格式的图像，但是要让人从屏幕看得到，还需要一个视频输出的模块。当然
+    可以像一个Win32窗口程序那样直接把图像画到窗口DC上——VLC的一个输出模块WinGDI就是这么干的，但是通常这太慢了，而且消耗大量
+    的CPU。在Windows下比较好的办法是用DirectX的接口，会自动调用显卡的加速功能。
+        这样的功能分解使得模块化更容易一点，每个模块住需要专注于自己的事；从整体来说功能强大而且灵活。
+        但是事情总是不会那么简单。就拿access来说，媒体的访问是分层的，如RTSP就涉及到IPv4、TCP、UDP、RTCP、RTSP等多个层次的
+    协议。有些视频格式包括了传输、封装格式和编辑码格式如MPEG系列，有些封装格式是独立的容器，但是很多人会误解它是编解码格式，
+    如mkv、avi这些。
+
+音视频同步：
+        音频和视频在demux之后就是独立的，但是需要有一套机制把它们同步起来。同时我们需要有一套机制来控制速度、暂停、停止、
+    跳进，获取各种媒体信息，这些都是很复杂而又很重要的事情。
+        另外也许需要在某个地方插入一些修改，来实现某种效果。如音频的EQ，视频的亮度调整之类的，VLC专门设计了access_filter、
+    audio_filter和video_filter类型的模块来做这一类事情。
+
+输出：
+        VLC比较独特的地方是集成了原来的VLS的功能，这依赖于VLC中stream_output类型的模块，它们可以把正在播放的视频以某种方式
+    重新转码和发送出去，如http、UDP、文件等等。
+    
+        MPlayer的结构与此是类似的，如/stream目录对应的是access的功能，/mpdemux对应的demux功能，/libmpcodecs是解码器，/libvo
+    和/libao2分别是视频和音频的输出。
+        DirectShow也是类似的，不过分类更多一些更复杂一点。DirectShow里面的模块叫做“filter”，filter之间通过”pin”来连接。
+    access的模块对应于DirectShow中的Source FIlter，这一类Filter只有输出pin没有输入pin。demux模块对应于splitter filter，
+    这种filter有一个输入pin，多个输出pin。解码模块是一类transform filter，有一个输入pin、一个输出pin，输出模块对应于
+    readering filter，有一个输入pin，没有输出pin。当然transform filter不一定是解码器，也可能是某种其他的处理。
+
